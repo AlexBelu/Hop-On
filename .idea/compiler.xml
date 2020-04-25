@@ -9,5 +9,8 @@
         <module name="Hop-On" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Hop-On" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

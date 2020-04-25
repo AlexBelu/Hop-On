@@ -1,0 +1,19 @@
+{
+  "UsersList": [
+    {
+      "password": "ponei",
+      "role": "Customer",
+      "username": "Liana Aruncutean"
+    },
+    {
+      "password": "troian",
+      "role": "Pilot",
+      "username": "Alexandru Belu"
+    },
+    {
+      "password": "spartan",
+      "role": "Customer",
+      "username": "Andrei Bisoc"
+    }
+  ]
+}
