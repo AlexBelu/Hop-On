@@ -3,7 +3,7 @@
 import java.util.ArrayList;
 import java.util.Objects;
 
-public class User {
+abstract public class User {
     protected String username;
     protected String password;
     protected String role;
