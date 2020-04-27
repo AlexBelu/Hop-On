@@ -1,4 +1,4 @@
-
+package model;
 
 import java.util.ArrayList;
 import java.util.Objects;
@@ -14,7 +14,7 @@ abstract public class User {
         this.password=password;
         this.role=role;
     }
-
+   public User(){}
     public String getUsername() {
         return username;
     }
@@ -56,23 +56,11 @@ abstract public class User {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "model.User{" +
                 "username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 ", role='" + role + '\'' +
                 '}';
     }
 }
- class Customer extends User{
-     private ArrayList<Flight> boardingCard;
-     public Customer(String username, String password)
-     {
-         super(username,password,"Customer");
-     }
-}
-class Pilot extends User{
-    public Pilot(String username, String password)
-    {
-        super(username,password,"Pilot");
-    }
-}
+
