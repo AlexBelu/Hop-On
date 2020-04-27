@@ -3,52 +3,64 @@ import org.json.simple.JSONObject;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Path;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Path;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
 
 public class JSONWriter {
-    private static FileWriter file;
+        private static FileWriter file;
+        private static final Path PILOT_PATH = FileSystemService.getPathToFile("jsonFilePilot.json");
+        private static final Path CUSTOMER_PATH = FileSystemService.getPathToFile("jsonFileCustomer.json");
 
-    @SuppressWarnings("unchecked")
-    public static void main(String[] args) {
+        @SuppressWarnings("unchecked")
+        private static String encodePassword(String salt, String password) {
+            MessageDigest md = getMessageDigest();
+            md.update(salt.getBytes(StandardCharsets.UTF_8));
 
-        // JSON object. Key value pairs are unordered. JSONObject supports java.util.Map interface.
-        JSONObject obj = new JSONObject();
+            byte[] hashedPassword = md.digest(password.getBytes(StandardCharsets.UTF_8));
 
-        JSONArray users = new JSONArray();
-        JSONObject user1 = new JSONObject();
-        user1.put("username", "Liana Aruncutean");
-        user1.put("password", "ponei");
-        user1.put("role", "Customer");
-        users.add(user1);
-        JSONObject user2 = new JSONObject();
-        user2.put("username", "Alexandru Belu");
-        user2.put("password", "troian");
-        user2.put("role", "Pilot");
-        users.add(user2);
-        JSONObject user3 = new JSONObject();
-        user3.put("username", "Andrei Bisoc");
-        user3.put("password", "spartan");
-        user3.put("role", "Customer");
-        users.add(user3);
-        obj.put("UsersList", users);
+            // This is the way a password should be encoded when checking the credentials
+            return new String(hashedPassword, StandardCharsets.UTF_8)
+                    .replace("", ""); //to be able to save in JSON format
+        }
+    private static MessageDigest getMessageDigest() {
+        MessageDigest md;
         try {
+            md = MessageDigest.getInstance("SHA-512");
+        } catch (NoSuchAlgorithmException e) {
+            throw new IllegalStateException("SHA-512 does not exist!");
+        }
+        return md;
+    }
 
-            // Constructs a FileWriter given a file name, using the platform's default charset
-            file = new FileWriter("D:/Facultate/An 2 - Liana/Semestrul 2/FIS/Hop-On/Hop-On/jsonFile.json");
-            file.write(obj.toJSONString());
-            System.out.println("Successfully Copied JSON Object to File...");
-            System.out.println("\nJSON Object: " + obj);
+    public static void main(String[] args){
+        ArrayList<Pilot> users1 = new ArrayList<Pilot>();
+        Pilot pilot1 = new Pilot("Popovici Marian", encodePassword("Popovici Marian", "popmaio99"));
+        Pilot pilot2 = new Pilot("Vladovici Ana", encodePassword("Vladovici Ana", "vladi93"));
+        users1.add(pilot1);
+        users1.add(pilot2);
 
+        ArrayList<Customer> users2 = new ArrayList<Customer>();
+        Customer customer1 = new Customer ("Vancea Roxana", encodePassword("Vancea Roxana", "mamaNatura"));
+        Customer customer2 = new Customer ("Fodor Razvan", encodePassword("Fodor Razvan", "lotifan"));
+        users2.add(customer1);
+        users2.add(customer2);
+        try {
+            ObjectMapper objectMapper1 = new ObjectMapper();
+            objectMapper1.writerWithDefaultPrettyPrinter().writeValue(PILOT_PATH.toFile(), users1);
+            ObjectMapper objectMapper2 = new ObjectMapper();
+            objectMapper2.writerWithDefaultPrettyPrinter().writeValue(CUSTOMER_PATH.toFile(), users2);
         } catch (IOException e) {
             e.printStackTrace();
-
-        } finally {
-
-            try {
-                file.flush();
-                file.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
         }
     }
 }

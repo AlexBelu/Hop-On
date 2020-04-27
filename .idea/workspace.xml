@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84d1b675-e47f-46c5-8150-396e1a9d0ad0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hop-On.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hop-On.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Hop-On.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsonFile.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JSONWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JSONWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/JSONWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JSONWriter.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +38,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/json-simple-1.1.1.jar!/" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
@@ -47,6 +46,13 @@
   <component name="RunManager" selected="Application.JSONWriter">
     <configuration name="DemoSwing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DemoSwing" />
+      <module name="Hop-On" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileSystemService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FileSystemService" />
       <module name="Hop-On" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -62,6 +68,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.JSONWriter" />
+        <item itemvalue="Application.FileSystemService" />
         <item itemvalue="Application.DemoSwing" />
       </list>
     </recent_temporary>
@@ -91,23 +98,31 @@
       <option name="project" value="LOCAL" />
       <updated>1587657603149</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="[HO-34] Create the JSON file that stores data.">
+      <created>1587811921961</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1587811921961</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[HO-6] Create a .gitignore file to ignore the unwanted files and folders." />
     <MESSAGE value="[HO-1] Create the Use Case diagram based on the specification." />
-    <option name="LAST_COMMIT_MESSAGE" value="[HO-1] Create the Use Case diagram based on the specification." />
+    <MESSAGE value="[HO-34] Create the JSON file that stores data." />
+    <option name="LAST_COMMIT_MESSAGE" value="[HO-34] Create the JSON file that stores data." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="233" y="0" key="#Project_Structure" timestamp="1587809081162">
+    <state x="233" y="0" key="#Project_Structure" timestamp="1587979902178">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1587809081162" />
-    <state x="273" y="0" key="CommitChangelistDialog2" timestamp="1587811868697">
+    <state x="233" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1587979902178" />
+    <state x="273" y="0" key="CommitChangelistDialog2" timestamp="1587980767982">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="273" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1587811868697" />
+    <state x="273" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1587980767982" />
     <state x="121" y="50" key="DiffContextDialog" timestamp="1587657233417">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -116,34 +131,34 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1587809068131" />
-    <state width="618" height="163" key="GridCell.Tab.0.bottom" timestamp="1587811738880">
+    <state width="618" height="163" key="GridCell.Tab.0.bottom" timestamp="1587980613287">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="618" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587811738880" />
-    <state width="618" height="163" key="GridCell.Tab.0.center" timestamp="1587811738880">
+    <state width="618" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587980613287" />
+    <state width="618" height="163" key="GridCell.Tab.0.center" timestamp="1587980613286">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="618" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1587811738880" />
-    <state width="618" height="163" key="GridCell.Tab.0.left" timestamp="1587811738880">
+    <state width="618" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1587980613286" />
+    <state width="618" height="163" key="GridCell.Tab.0.left" timestamp="1587980613286">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="618" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1587811738880" />
-    <state width="618" height="163" key="GridCell.Tab.0.right" timestamp="1587811738880">
+    <state width="618" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1587980613286" />
+    <state width="618" height="163" key="GridCell.Tab.0.right" timestamp="1587980613287">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="618" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1587811738880" />
-    <state x="171" y="0" key="Maven.ArtifactSearchDialog" timestamp="1587809281218">
+    <state width="618" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1587980613287" />
+    <state x="171" y="0" key="Maven.ArtifactSearchDialog" timestamp="1587979702596">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="171" y="0" key="Maven.ArtifactSearchDialog/0.0.1280.680@0.0.1280.680" timestamp="1587809281218" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1587811419986">
+    <state x="171" y="0" key="Maven.ArtifactSearchDialog/0.0.1280.680@0.0.1280.680" timestamp="1587979702596" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1587824520161">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1587811419986" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1587657618635">
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1587824520161" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1587811945229">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1587657618635" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1587811945229" />
     <state x="375" y="234" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1587808933297">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
