@@ -1,17 +1,13 @@
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
+package services;
 
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Path;
-
+import model.*;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import java.io.FileWriter;
-import java.io.IOException;
+import services.FileSystemService;
+
 import java.nio.charset.StandardCharsets;
-import java.nio.file.Path;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
@@ -22,7 +18,7 @@ public class JSONWriter {
         private static final Path CUSTOMER_PATH = FileSystemService.getPathToFile("jsonFileCustomer.json");
 
         @SuppressWarnings("unchecked")
-        private static String encodePassword(String salt, String password) {
+        static String encodePassword(String salt, String password) {
             MessageDigest md = getMessageDigest();
             md.update(salt.getBytes(StandardCharsets.UTF_8));
 
