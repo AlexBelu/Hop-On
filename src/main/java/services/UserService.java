@@ -18,6 +18,7 @@ public class UserService {
     private static List<Customer> customers;
     private static final Path PILOTS_PATH = FileSystemService.getPathToFile("jsonFilePilot.json");
     private static final Path CUSTOMERS_PATH=FileSystemService.getPathToFile("jsonFileCustomer.json");
+    private static String LoginRole;
 
     public static void loadUsersFromFile() throws IOException {
 
@@ -41,15 +42,21 @@ public class UserService {
         for(Pilot pilot:pilots)
            if(pilot.getUsername().equals(username)) {
                find = 1;
+               LoginRole = "pilot";
                if (!pilot.getPassword().equals(JSONWriter.encodePassword(username, password)))
                    throw new IncorrectPasswordException(password);
            }
         for(Customer customer:customers)
            if(customer.getUsername().equals(username)) {
                find=1;
+               LoginRole = "customer";
                if(!customer.getPassword().equals(JSONWriter.encodePassword(username,password)))
                    throw new IncorrectPasswordException(password);}
         if(find==0)
              throw new IncorrectUsernameException(username);
+    }
+
+    public static String getLoginRole(){
+        return LoginRole;
     }
 }
