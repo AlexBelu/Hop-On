@@ -5,27 +5,50 @@ import java.awt.event.*;
 
 
 public class PilotView extends JFrame {
+   private JButton add;
+   private JButton show;
 
-    public static void main(String[] args) {
-        PilotView frameTabel = new PilotView();
-    }
-
-    JLabel welcome = new JLabel("Welcome to Pilot Page");
-    JPanel panel = new JPanel();
+    JLabel welcome = new JLabel("Welcome to the Pilot's Page");
 
     PilotView(){
-        super("Welcome");
-        setSize(300,200);
-        setLocation(500,280);
-        panel.setLayout (null);
 
-        welcome.setBounds(70,50,150,60);
+        super("Pilot's Page");
 
-        panel.add(welcome);
-
-        getContentPane().add(panel);
+        setSize(500,500);
+        setResizable(false);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setVisible(true);
+        setLocation(500,280);
+        welcome.setBounds(177,10,200,110);
+        Container contentPane = this.getContentPane();
+        contentPane.setLayout(null);
+        contentPane.add(welcome);
+        add=new JButton("Add Flight");
+        add.addActionListener(new ActionListener() {
+                                  public void actionPerformed(ActionEvent actionEvent) {
+                                      PilotAdd regFace = new PilotAdd();
+                                      regFace.setVisible(true);
+                                      dispose();
+                                  }
+                              });
+        add.setBounds(175, 110, 120, 40);
+        contentPane.add(add);
+        show=new JButton("Show Flights");
+        show.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent actionEvent) {
+                PilotViewFlights regFace = new PilotViewFlights();
+                regFace.setVisible(true);
+                dispose();
+            }
+        });
+        show.setBounds(175, 160, 120, 40);
+        contentPane.add(show);
+
+
     }
+    public static void main(String[] args) {
+        PilotView frameTabel = new PilotView();
+           frameTabel.setVisible(true);
+    }
+
 
 }
