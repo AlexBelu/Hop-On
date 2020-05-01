@@ -62,4 +62,13 @@ public class Flight {
     public void setUsernamePilot2(String usernamePilot2) {
         this.usernamePilot2 = usernamePilot2;
     }
+
+    public String toString() {
+        return "Flight{" +
+                "flightNo=" + flightNo +
+                ", departure='" + departure + '\'' +
+                ", arrival='" + arrival + '\'' +
+                ", date='" + date + '\'' +
+                '}';
+    }
 }

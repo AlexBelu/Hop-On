@@ -9,11 +9,11 @@ public class Pilot extends User {
     }
     public Pilot(){}
 
-    public String showFlights(){
-        String str = "";
-        for(Flight flight:myFlights){
-            str = str + flight + "\n";
+    public String[] showFlights(){
+        String[] flight_array = new String[myFlights.size()];
+        for(int i=0; i<myFlights.size(); i++){
+            flight_array[i] = myFlights.get(i).toString();
         }
-        return str;
+        return flight_array;
     }
 }
