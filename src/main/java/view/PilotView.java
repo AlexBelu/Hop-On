@@ -13,12 +13,12 @@ public class PilotView extends JFrame {
     PilotView(){
 
         super("Pilot's Page");
-        JLabel welcome = new JLabel("Welcome to the Pilot's Page");
+        JLabel welcome = new JLabel("Welcome to the Pilot's Page, "+ LoginView.getTxtUsername());
         setSize(500,500);
         setResizable(false);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocation(500,280);
-        welcome.setBounds(177,10,200,110);
+        welcome.setBounds(135,10,300,110);
         Container contentPane = this.getContentPane();
         contentPane.setLayout(null);
         contentPane.add(welcome);
@@ -49,6 +49,5 @@ public class PilotView extends JFrame {
         PilotView frameTabel = new PilotView();
            frameTabel.setVisible(true);
     }
-
 
 }
