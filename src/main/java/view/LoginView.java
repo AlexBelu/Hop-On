@@ -11,7 +11,7 @@ import java.awt.event.ActionListener;
 
 public class LoginView extends JFrame {
     private JButton btnRegister;
-    private JTextField txtUsername;
+    private static JTextField txtUsername;
     private JPasswordField txtPassword;
     private JComboBox<String> cmbRole;
     private LoginController controller;
@@ -68,6 +68,10 @@ public class LoginView extends JFrame {
         btnRegister.setBounds(175, 110, 100, 40);
 
         contentPane.add(btnRegister);
+    }
+
+    public static String getTxtUsername(){
+        return txtUsername.getText();
     }
 
     public static void main(String[] args) throws Exception {
