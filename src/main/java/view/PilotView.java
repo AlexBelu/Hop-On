@@ -8,12 +8,12 @@ public class PilotView extends JFrame {
    private JButton add;
    private JButton show;
 
-    JLabel welcome = new JLabel("Welcome to the Pilot's Page");
+
 
     PilotView(){
 
         super("Pilot's Page");
-
+        JLabel welcome = new JLabel("Welcome to the Pilot's Page");
         setSize(500,500);
         setResizable(false);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
