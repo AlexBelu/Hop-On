@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84d1b675-e47f-46c5-8150-396e1a9d0ad0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/target/classes/model/Flight.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Flight.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Flight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Pilot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Pilot.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588330018862</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="[HO-37] Create a JSON file that stores the flight's data.">
+      <created>1588330235652</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1588330235652</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -168,25 +177,26 @@
     <MESSAGE value="[HO-1] Create the Use Case diagram based on the specification." />
     <MESSAGE value="[HO-34] Create the JSON file that stores data." />
     <MESSAGE value="[HO-13] Create a Java class to describe flights and a method which displays the pilot's flights." />
-    <option name="LAST_COMMIT_MESSAGE" value="[HO-13] Create a Java class to describe flights and a method which displays the pilot's flights." />
+    <MESSAGE value="[HO-37] Create a JSON file that stores the flight's data." />
+    <option name="LAST_COMMIT_MESSAGE" value="[HO-37] Create a JSON file that stores the flight's data." />
   </component>
   <component name="WindowStateProjectService">
     <state x="233" y="0" key="#Project_Structure" timestamp="1587979902178">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1587979902178" />
-    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser" timestamp="1588328505404">
+    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser" timestamp="1588330849295">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1588328505404" />
+    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1588330849295" />
     <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588087558704">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1588087558704" />
-    <state x="273" y="0" key="CommitChangelistDialog2" timestamp="1588330017304">
+    <state x="273" y="0" key="CommitChangelistDialog2" timestamp="1588330234194">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="273" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1588330017304" />
+    <state x="273" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1588330234194" />
     <state x="121" y="50" key="DiffContextDialog" timestamp="1587657233417">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -224,10 +234,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1587824520161" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1588330032673">
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1588330249419">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1588330032673" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1588330249419" />
     <state x="375" y="234" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1587808933297">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
