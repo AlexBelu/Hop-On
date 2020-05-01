@@ -8,4 +8,12 @@ public class Pilot extends User {
         super(username,password,"model.Pilot");
     }
     public Pilot(){}
+
+    public String showFlights(){
+        String str = "";
+        for(Flight flight:myFlights){
+            str = str + flight + "\n";
+        }
+        return str;
+    }
 }
