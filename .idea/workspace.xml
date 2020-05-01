@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84d1b675-e47f-46c5-8150-396e1a9d0ad0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Flight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Pilot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Pilot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Flight.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Flight.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,14 +153,22 @@
       <option name="project" value="LOCAL" />
       <updated>1587811921961</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="[HO-13] Create a Java class to describe flights and a method which displays the pilot's flights.">
+      <created>1588330018862</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1588330018862</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[HO-6] Create a .gitignore file to ignore the unwanted files and folders." />
     <MESSAGE value="[HO-1] Create the Use Case diagram based on the specification." />
     <MESSAGE value="[HO-34] Create the JSON file that stores data." />
-    <option name="LAST_COMMIT_MESSAGE" value="[HO-34] Create the JSON file that stores data." />
+    <MESSAGE value="[HO-13] Create a Java class to describe flights and a method which displays the pilot's flights." />
+    <option name="LAST_COMMIT_MESSAGE" value="[HO-13] Create a Java class to describe flights and a method which displays the pilot's flights." />
   </component>
   <component name="WindowStateProjectService">
     <state x="233" y="0" key="#Project_Structure" timestamp="1587979902178">
@@ -177,10 +183,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1588087558704" />
-    <state x="273" y="0" key="CommitChangelistDialog2" timestamp="1587980767982">
+    <state x="273" y="0" key="CommitChangelistDialog2" timestamp="1588330017304">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="273" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1587980767982" />
+    <state x="273" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1588330017304" />
     <state x="121" y="50" key="DiffContextDialog" timestamp="1587657233417">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -189,25 +195,25 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1587809068131" />
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1588329469783">
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1588329916915">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1588329469783" />
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1588329916915" />
     <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588327227780" />
-    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1588329469782">
+    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1588329916915">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1588329469782" />
+    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1588329916915" />
     <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1588327227779" />
-    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1588329469781">
+    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1588329916914">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1588329469781" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1588329916914" />
     <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1588327227779" />
-    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1588329469783">
+    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1588329916915">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1588329469783" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1588329916915" />
     <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1588327227779" />
     <state x="412" y="134" key="Maven.ArtifactSearchDialog" timestamp="1587981835162">
       <screen x="0" y="0" width="1536" height="824" />
@@ -218,10 +224,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1587824520161" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1587811945229">
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1588330032673">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1587811945229" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1588330032673" />
     <state x="375" y="234" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1587808933297">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
