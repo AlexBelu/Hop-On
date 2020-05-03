@@ -1,5 +1,9 @@
 package model;
 
+import services.UserService;
+
+import java.io.IOException;
+
 public class Flight {
     private int flightNo;
     private String departure;
@@ -7,13 +11,17 @@ public class Flight {
     private String date;
     private String usernamePilot1;
     private String usernamePilot2;
+    private int noPilots;
 
     public Flight(int flightNo, String departure, String arrival, String date) {
         this.flightNo = flightNo;
         this.departure = departure;
         this.arrival = arrival;
         this.date = date;
+        this.noPilots = 0;
     }
+
+    public Flight(){}
 
     public int getFlightNo() {
         return flightNo;
@@ -53,6 +61,7 @@ public class Flight {
 
     public void setUsernamePilot1(String usernamePilot1) {
         this.usernamePilot1 = usernamePilot1;
+        this.noPilots++;
     }
 
     public String getUsernamePilot2() {
@@ -61,6 +70,11 @@ public class Flight {
 
     public void setUsernamePilot2(String usernamePilot2) {
         this.usernamePilot2 = usernamePilot2;
+        this.noPilots++;
+    }
+
+    public int getNoPilots() {
+        return noPilots;
     }
 
     public String toString() {
@@ -69,6 +83,9 @@ public class Flight {
                 ", departure='" + departure + '\'' +
                 ", arrival='" + arrival + '\'' +
                 ", date='" + date + '\'' +
+                ", Pilot1='" + usernamePilot1 + '\'' +
+                ", Pilot2='" + usernamePilot2 + '\'' +
                 '}';
     }
+
 }
