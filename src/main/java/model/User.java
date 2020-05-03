@@ -7,7 +7,7 @@ abstract public class User {
     protected String username;
     protected String password;
     protected String role;
-    protected ArrayList<Flight>myFlights;
+    protected ArrayList<Flight>myFlights=new ArrayList<>();
     public User(String username, String password, String role)
     {
         this.username=username;
@@ -56,10 +56,11 @@ abstract public class User {
 
     @Override
     public String toString() {
-        return "model.User{" +
+        return "User{" +
                 "username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 ", role='" + role + '\'' +
+                ", myFlights=" + myFlights +
                 '}';
     }
 }
