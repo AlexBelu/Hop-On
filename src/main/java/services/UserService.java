@@ -59,4 +59,10 @@ public class UserService {
     public static String getLoginRole(){
         return LoginRole;
     }
+    public static Pilot findPilot(String username){
+        for(Pilot pilot:pilots)
+            if(pilot.getUsername().equals(username))
+                return pilot;
+        return null;
+    }
 }

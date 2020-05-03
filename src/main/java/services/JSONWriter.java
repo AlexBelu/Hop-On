@@ -11,7 +11,7 @@ import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
-
+import model.*;
 public class JSONWriter {
         private static FileWriter file;
         private static final Path PILOT_PATH = FileSystemService.getPathToFile("jsonFilePilot.json");
