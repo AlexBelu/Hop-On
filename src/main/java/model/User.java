@@ -63,5 +63,18 @@ abstract public class User {
                 ", myFlights=" + myFlights +
                 '}';
     }
+
+    public String[] showFlights() {
+        if(myFlights.size() == 0){
+            return null;
+        }
+        else {
+            String[] flight_array = new String[myFlights.size()];
+            for (int i = 0; i < myFlights.size(); i++) {
+                flight_array[i] = myFlights.get(i).toString();
+            }
+            return flight_array;
+        }
+    }
 }
 
