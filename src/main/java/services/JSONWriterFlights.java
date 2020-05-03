@@ -12,6 +12,10 @@ public class JSONWriterFlights {
     private static FileWriter file;
     private static final Path FLIGHT_PATH = FileSystemService.getPathToFile("jsonFileFlight.json");
 
+    public static Path getPathFlight(){
+        return FLIGHT_PATH;
+    }
+
     public static void main(String[] args){
         ArrayList<Flight> flights = new ArrayList<>();
         Flight flight1 = new Flight(1, "Timisoara", "Londra", "29-05-2020");
