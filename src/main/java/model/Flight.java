@@ -78,14 +78,13 @@ public class Flight {
     }
 
     public String toString() {
-        return "Flight{" +
+        return
                 "flightNo=" + flightNo +
                 ", departure='" + departure + '\'' +
                 ", arrival='" + arrival + '\'' +
-                ", date='" + date + '\'' +
-                ", Pilot1='" + usernamePilot1 + '\'' +
-                ", Pilot2='" + usernamePilot2 + '\'' +
-                '}';
+                ", date='" + date + '\''+"pilot:" + usernamePilot1 ;
+
+
     }
 
 }

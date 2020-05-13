@@ -7,14 +7,19 @@ abstract public class User {
     protected String username;
     protected String password;
     protected String role;
-    protected ArrayList<Flight>myFlights=new ArrayList<>();
+    protected ArrayList<Flight>myFlights= new ArrayList<>();
     public User(String username, String password, String role)
     {
         this.username=username;
         this.password=password;
         this.role=role;
     }
-   public User(){}
+
+    public ArrayList<Flight> getMyFlights() {
+        return myFlights;
+    }
+
+    public User(){}
     public String getUsername() {
         return username;
     }
