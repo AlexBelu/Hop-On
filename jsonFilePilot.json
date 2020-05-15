@@ -7,5 +7,13 @@
   "username" : "Vladovici Ana",
   "password" : "\u0014���%����\u0015��\u0010:O\u001C6\u0011�+c�4��rA_�Xe�B\u0002�V?[�\u001D�F��z���\u001E��{K\uDAB0\uDDD2�4���&",
   "role" : "Pilot",
-  "myFlights" : [ ]
+  "myFlights" : [ {
+    "flightNo" : 5,
+    "departure" : "Timisoara",
+    "arrival" : "Paris",
+    "date" : "15-06-2020",
+    "usernamePilot1" : "Vladovici Ana",
+    "usernamePilot2" : null,
+    "noPilots" : 1
+  } ]
 } ]
