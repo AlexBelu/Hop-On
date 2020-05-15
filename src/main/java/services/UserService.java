@@ -67,16 +67,20 @@ public class UserService {
             throw new IncorrectUsernameException(username);
     }
 
-    public static List<Pilot> getPilots(){
+    public static List<Pilot> getPilots() {
         return pilots;
     }
 
-    public static List<Flight> getFlights(){
+    public static List<Flight> getFlights() {
         return flights;
     }
 
-    public static Path getPathPilot(){
+    public static Path getPathPilot() {
         return PILOTS_PATH;
+    }
+
+    public static Path getPathCustomer() {
+        return CUSTOMERS_PATH;
     }
 
     public static String getLoginRole() {
@@ -103,6 +107,17 @@ public class UserService {
 
         return availableFlights;
     }
+
+    public static ArrayList<Flight> checkAvailableFlightsUser(String username, String departure, String arrival) throws IOException {
+        ArrayList<Flight> availableFlights = new ArrayList<>();
+        UserService.loadFlightsFromFile();
+        for (Flight flight : flights) {
+            if (!(getCustomer(username).getMyFlights().contains(flight)))
+               if(flight.getDeparture().equals(departure)&&flight.getArrival().equals(arrival))
+                availableFlights.add(flight);
+        }
+        return availableFlights;
+    }
     public static Flight getFlight(int a )
     {  Flight b = null;
         for(Flight flight:flights) {
@@ -112,7 +127,13 @@ public class UserService {
         }
         return b;
     }
-
+   public static Customer getCustomer(String username)
+   {
+       for (Customer customer : customers)
+           if (customer.getUsername().equals(username))
+               return customer;
+       return null;
+   }
     public static String[] listToArray(ArrayList list) {
         if (list.size() == 0) {
             return null;
@@ -127,6 +148,7 @@ public class UserService {
     public static void main(String[] argv) throws IOException {
        loadUsersFromFile();
        loadFlightsFromFile();
+
 
        //UserService.findPilot("Vladovici Ana").addFlight(2,checkAvailabilityFlight("Vladovici Ana"));
         //System.out.println(UserService.findPilot("Vladovici Ana").getMyFlights());
