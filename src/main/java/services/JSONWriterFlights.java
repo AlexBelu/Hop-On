@@ -1,5 +1,6 @@
 package services;
 
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import model.Flight;
 
@@ -7,6 +8,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.util.ArrayList;
+import java.util.List;
 
 public class JSONWriterFlights {
     private static FileWriter file;
@@ -39,8 +41,6 @@ public class JSONWriterFlights {
         flights.add(flight8);
         flights.add(flight9);
         flights.add(flight10);
-
-
         try {
             ObjectMapper objectMapper1 = new ObjectMapper();
             objectMapper1.writerWithDefaultPrettyPrinter().writeValue(FLIGHT_PATH.toFile(), flights);
@@ -48,4 +48,5 @@ public class JSONWriterFlights {
             e.printStackTrace();
         }
     }
+
 }

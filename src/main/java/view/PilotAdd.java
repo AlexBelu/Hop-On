@@ -55,7 +55,7 @@ public class PilotAdd extends JFrame {
             JButton select=new JButton("Select flight");
             select.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent actionEvent) {
-                    try { int a=0;
+                    try {int a=0;
                          int i=9;
                          while(isNumeric(String.valueOf(selectedValuesList.get(selectedValuesList.size()-1).charAt(i)))) {
                              a=a*10+Character.getNumericValue(selectedValuesList.get(selectedValuesList.size()-1).charAt(i));
@@ -63,7 +63,7 @@ public class PilotAdd extends JFrame {
                          }
 
 
-                          if(LoginView.getTxtUsername().equals(UserService.getFlight(a).getUsernamePilot1()))
+                          if(LoginView.getTxtUsername().equals(UserService.getFlight(a).getUsernamePilot1())||LoginView.getTxtUsername().equals(UserService.getFlight(a).getUsernamePilot2()))
                               JOptionPane.showMessageDialog(null, "You have already added", "Adding flight", JOptionPane.ERROR_MESSAGE);
                           else
                               (UserService.findPilot(LoginView.getTxtUsername())).addFlight(a, UserService.checkAvailabilityFlight(LoginView.getTxtUsername()));
