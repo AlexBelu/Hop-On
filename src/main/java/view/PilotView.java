@@ -2,6 +2,7 @@ package view;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.io.IOException;
 
 
 public class PilotView extends JFrame {
@@ -25,7 +26,12 @@ public class PilotView extends JFrame {
         add=new JButton("Add Flight");
         add.addActionListener(new ActionListener() {
                                   public void actionPerformed(ActionEvent actionEvent) {
-                                      PilotAdd regFace = new PilotAdd();
+                                      PilotAdd regFace = null;
+                                      try {
+                                          regFace = new PilotAdd();
+                                      } catch (IOException e) {
+                                          e.printStackTrace();
+                                      }
                                       regFace.setVisible(true);
                                       dispose();
                                   }

@@ -2,16 +2,15 @@ package services;
 import exceptions.*;
 import java.io.IOException;
 import java.nio.file.Files;
-        import java.nio.file.Path;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
-
 import exceptions.IncorrectUsernameException;
 import model.*;
-
 import com.fasterxml.jackson.core.type.TypeReference;
-        import com.fasterxml.jackson.databind.ObjectMapper;
-        import org.apache.commons.io.FileUtils;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.apache.commons.io.FileUtils;
+
 
 public class UserService {
 
@@ -32,11 +31,9 @@ public class UserService {
             FileUtils.copyURLToFile(UserService.class.getClassLoader().getResource("jsonFileCustomer.json"), CUSTOMERS_PATH.toFile());
         }
         ObjectMapper objectMapper1 = new ObjectMapper();
-
         pilots = objectMapper1.readValue(PILOTS_PATH.toFile(), new TypeReference<List<Pilot>>() {
         });
         ObjectMapper objectMapper2 = new ObjectMapper();
-
         customers = objectMapper2.readValue(CUSTOMERS_PATH.toFile(), new TypeReference<List<Customer>>() {
         });
     }
@@ -46,7 +43,6 @@ public class UserService {
             FileUtils.copyURLToFile(UserService.class.getClassLoader().getResource("jsonFileFlight.json"), FLIGHT_PATH.toFile());
         }
         ObjectMapper objectMapper3 = new ObjectMapper();
-
         flights = objectMapper3.readValue(FLIGHT_PATH.toFile(), new TypeReference<List<Flight>>() {
         });
     }
@@ -99,13 +95,22 @@ public class UserService {
         UserService.loadFlightsFromFile();
         for (Flight flight : flights) {
             if ((flight.getUsernamePilot1() == null || !(flight.getUsernamePilot1().equals(username))
-                    || (flight.getUsernamePilot2() == null || !(flight.getUsernamePilot2().equals(username))))
+                    && (flight.getUsernamePilot2() == null || !(flight.getUsernamePilot2().equals(username))))
                     && flight.getNoPilots() < 2) {
                 availableFlights.add(flight);
             }
         }
 
         return availableFlights;
+    }
+    public static Flight getFlight(int a )
+    {  Flight b = null;
+        for(Flight flight:flights) {
+            if (a == flight.getFlightNo()) {
+                b = flight;
+            }
+        }
+        return b;
     }
 
     public static String[] listToArray(ArrayList list) {
@@ -118,5 +123,13 @@ public class UserService {
             }
             return array;
         }
+    }
+    public static void main(String[] argv) throws IOException {
+       loadUsersFromFile();
+       loadFlightsFromFile();
+
+       //UserService.findPilot("Vladovici Ana").addFlight(2,checkAvailabilityFlight("Vladovici Ana"));
+        //System.out.println(UserService.findPilot("Vladovici Ana").getMyFlights());
+
     }
 }
