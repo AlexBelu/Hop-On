@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84d1b675-e47f-46c5-8150-396e1a9d0ad0" name="Default Changelist" comment="">
+    <list default="true" id="84d1b675-e47f-46c5-8150-396e1a9d0ad0" name="Default Changelist" comment="[HO-21] Create the GUI for the list of flights.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/CustomerViewFlights.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/CustomerViewFlights.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/CustomerViewFlights.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/CustomerViewFlights.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="login" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -187,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588515082859</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="[HO-17] Create a GUI to display the available flights and to add a flight. - UPDATE">
+      <created>1589538647889</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1589538647889</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -198,7 +209,9 @@
     <MESSAGE value="[HO-37] Create a JSON file that stores the flight's data." />
     <MESSAGE value="[HO-13] Create a Java class to describe flights and a method which displays the pilot's flights. - UPDATE" />
     <MESSAGE value="[HO-17] Create a GUI to display the available flights and to add a flight." />
-    <option name="LAST_COMMIT_MESSAGE" value="[HO-17] Create a GUI to display the available flights and to add a flight." />
+    <MESSAGE value="[HO-17] Create a GUI to display the available flights and to add a flight. - UPDATE" />
+    <MESSAGE value="[HO-21] Create the GUI for the list of flights." />
+    <option name="LAST_COMMIT_MESSAGE" value="[HO-21] Create the GUI for the list of flights." />
   </component>
   <component name="WindowStateProjectService">
     <state x="280" y="0" key="#Project_Structure" timestamp="1589363741788">
@@ -219,10 +232,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="516" y="259" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1588336546893" />
-    <state x="323" y="0" key="CommitChangelistDialog2" timestamp="1589364133145">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="269" y="0" key="CommitChangelistDialog2" timestamp="1589612015081">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="269" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1588515081042" />
+    <state x="269" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1589612015081" />
     <state x="323" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1589364133145" />
     <state x="121" y="50" key="DiffContextDialog" timestamp="1587657233417">
       <screen x="0" y="0" width="1280" height="680" />
@@ -232,25 +245,25 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1587809068131" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1589535473411">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="618" height="163" key="GridCell.Tab.0.bottom" timestamp="1589611905734">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1588521883426" />
+    <state width="618" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589611905734" />
     <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589535473411" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1589535473410">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="618" height="163" key="GridCell.Tab.0.center" timestamp="1589611905734">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1588521883425" />
+    <state width="618" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1589611905734" />
     <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589535473410" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1589535473410">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="618" height="163" key="GridCell.Tab.0.left" timestamp="1589611905734">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1588521883425" />
+    <state width="618" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1589611905734" />
     <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589535473410" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1589535473411">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="618" height="163" key="GridCell.Tab.0.right" timestamp="1589611905734">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1588521883425" />
+    <state width="618" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1589611905734" />
     <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589535473411" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1589362087794">
       <screen x="0" y="0" width="1536" height="824" />
