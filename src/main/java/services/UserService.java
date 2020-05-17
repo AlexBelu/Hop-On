@@ -119,7 +119,7 @@ public class UserService {
         ArrayList<Flight> availableFlights = new ArrayList<>();
         UserService.loadFlightsFromFile();
         for (Flight flight : flights) {
-            if (!(getCustomer(username).getMyFlights().contains(flight)))
+            if (!(findCustomer(username).getMyFlights().contains(flight)))
                if(flight.getDeparture().equals(departure)&&flight.getArrival().equals(arrival))
                 availableFlights.add(flight);
         }
@@ -134,13 +134,7 @@ public class UserService {
         }
         return b;
     }
-   public static Customer getCustomer(String username)
-   {
-       for (Customer customer : customers)
-           if (customer.getUsername().equals(username))
-               return customer;
-       return null;
-   }
+
     public static String[] listToArray(ArrayList list) {
         if (list.size() == 0) {
             return null;
