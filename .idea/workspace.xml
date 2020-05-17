@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84d1b675-e47f-46c5-8150-396e1a9d0ad0" name="Default Changelist" comment="[HO-21] Create the GUI for the list of flights.">
+    <list default="true" id="84d1b675-e47f-46c5-8150-396e1a9d0ad0" name="Default Changelist" comment="[HO-25] Create a GUI for searching flights.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsonFileCustomer.json" beforeDir="false" afterPath="$PROJECT_DIR$/jsonFileCustomer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jsonFileFlight.json" beforeDir="false" afterPath="$PROJECT_DIR$/jsonFileFlight.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jsonFilePilot.json" beforeDir="false" afterPath="$PROJECT_DIR$/jsonFilePilot.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/PilotViewFlights.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/PilotViewFlights.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/CustomerAdd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/CustomerAdd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/CustomerAddFlight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/CustomerAddFlight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Customer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/PilotViewFlights.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/PilotViewFlights.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/CustomerAdd.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/CustomerAdd.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +62,19 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.LoginView">
+    <configuration name="CustomerAdd" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="view.CustomerAdd" />
+      <module name="Hop-On" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JSONWriter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="services.JSONWriter" />
       <module name="Hop-On" />
@@ -97,19 +114,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PilotViewFlights" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="view.PilotViewFlights" />
-      <module name="Hop-On" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="view.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UserService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="services.UserService" />
       <module name="Hop-On" />
@@ -126,10 +130,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.LoginView" />
-        <item itemvalue="Application.PilotViewFlights" />
-        <item itemvalue="Application.UserService" />
-        <item itemvalue="Application.JSONWriterFlights" />
         <item itemvalue="Application.JSONWriter" />
+        <item itemvalue="Application.JSONWriterFlights" />
+        <item itemvalue="Application.UserService" />
+        <item itemvalue="Application.CustomerAdd" />
       </list>
     </recent_temporary>
   </component>
@@ -193,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588515082859</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="[HO-25] Create a GUI for searching flights.">
+      <created>1589726723097</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1589726723098</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -204,7 +215,8 @@
     <MESSAGE value="[HO-37] Create a JSON file that stores the flight's data." />
     <MESSAGE value="[HO-13] Create a Java class to describe flights and a method which displays the pilot's flights. - UPDATE" />
     <MESSAGE value="[HO-17] Create a GUI to display the available flights and to add a flight." />
-    <option name="LAST_COMMIT_MESSAGE" value="[HO-17] Create a GUI to display the available flights and to add a flight." />
+    <MESSAGE value="[HO-25] Create a GUI for searching flights." />
+    <option name="LAST_COMMIT_MESSAGE" value="[HO-25] Create a GUI for searching flights." />
   </component>
   <component name="WindowStateProjectService">
     <state x="280" y="0" key="#Project_Structure" timestamp="1589363741788">
@@ -229,10 +241,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="516" y="259" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1588336546893" />
-    <state x="323" y="0" key="CommitChangelistDialog2" timestamp="1589364133145">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="269" y="0" key="CommitChangelistDialog2" timestamp="1589726722433">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="269" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1588515081042" />
+    <state x="269" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1589726722433" />
     <state x="323" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1589364133145" />
     <state x="121" y="50" key="DiffContextDialog" timestamp="1587657233417">
       <screen x="0" y="0" width="1280" height="680" />
@@ -242,25 +254,25 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1587809068131" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1589717036583">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1589736205632">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1588521883426" />
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589736205632" />
     <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589717036583" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1589717036581">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1589736205631">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1588521883425" />
+    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1589736205631" />
     <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589717036581" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1589717036581">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1589736205631">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1588521883425" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1589736205631" />
     <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589717036581" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1589717036581">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1589736205632">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1588521883425" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1589736205632" />
     <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589717036581" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1589362087794">
       <screen x="0" y="0" width="1536" height="824" />
@@ -287,10 +299,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1587824520161" />
-    <state x="280" y="90" key="Vcs.Push.Dialog.v2" timestamp="1589535471755">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1589726746922">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1588515095956" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1589726746922" />
     <state x="280" y="90" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1589535471755" />
     <state x="375" y="234" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1587808933297">
       <screen x="0" y="0" width="1280" height="680" />
@@ -304,9 +316,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1589113615252" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1588528348962">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="359" y="120" width="672" height="560" key="search.everywhere.popup" timestamp="1589735485643">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state x="359" y="120" width="672" height="560" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1589735485643" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1588528348962" />
   </component>
 </project>

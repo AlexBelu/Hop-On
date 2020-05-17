@@ -27,7 +27,7 @@ public class Customer extends User {
         flight_list.remove(a);
         try {
             ObjectMapper objectMapper1 = new ObjectMapper();
-            objectMapper1.writerWithDefaultPrettyPrinter().writeValue(UserService.getPathCustomer().toFile(), UserService.getPilots());
+            objectMapper1.writerWithDefaultPrettyPrinter().writeValue(UserService.getPathCustomer().toFile(), UserService.getCustomers());
             ObjectMapper objectMapper2 = new ObjectMapper();
             objectMapper2.writerWithDefaultPrettyPrinter().writeValue(JSONWriterFlights.getPathFlight().toFile(), UserService.getFlights());
         } catch (IOException e) {
