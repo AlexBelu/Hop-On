@@ -8,6 +8,9 @@ import java.awt.event.ActionListener;
 import java.io.IOException;
 
 public class CustomerAdd extends JFrame {
+    private static JTextField txtDeparture;
+    private static JTextField txtArrival;
+
     CustomerAdd(){
         super("Buy a Ticket");
         JLabel welcome = new JLabel("Enter departure <-> arrival place");
@@ -26,15 +29,15 @@ public class CustomerAdd extends JFrame {
         departure.setBounds(10, 50, 120, 25);
         contentPane.add(departure);
 
-        JTextField txtDepature = new JTextField();
-        txtDepature.setBounds(80, 50, 120, 25);
-        contentPane.add(txtDepature);
+        txtDeparture = new JTextField();
+        txtDeparture.setBounds(80, 50, 120, 25);
+        contentPane.add(txtDeparture);
 
         JLabel arrival = new JLabel("Arrival:");
         arrival.setBounds(10, 80, 120, 25);
         contentPane.add(arrival);
 
-        JTextField txtArrival = new JTextField();
+        txtArrival = new JTextField();
         txtArrival.setBounds(80, 80, 120, 25);
         contentPane.add(txtArrival);
 
@@ -42,8 +45,8 @@ public class CustomerAdd extends JFrame {
         search.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent actionEvent) {
                 try {
-                    if (UserService.checkAvailableFlightsUser(LoginView.getTxtUsername(), txtDepature.getText(), txtArrival.getText()) == null) {
-                        JOptionPane.showMessageDialog(null, "Sorry, we didn't fond any flight!", "Searching flight", JOptionPane.ERROR_MESSAGE);
+                    if (UserService.checkAvailableFlightsUser(LoginView.getTxtUsername(), txtDeparture.getText(), txtArrival.getText()).size() == 0) {
+                        JOptionPane.showMessageDialog(null, "Sorry, we didn't find any flight!", "Searching flight", JOptionPane.ERROR_MESSAGE);
                     }
                     else{
                         CustomerAddFlight regFace =new CustomerAddFlight();
@@ -58,6 +61,15 @@ public class CustomerAdd extends JFrame {
         search.setBounds(175, 110, 100, 40);
         contentPane.add(search);
     }
+
+    public static String getDeparture(){
+        return txtDeparture.getText();
+    }
+
+    public static String getArrival(){
+        return txtArrival.getText();
+    }
+
     public static void main(String[] args) {
         CustomerAdd frameTabel = new CustomerAdd();
         frameTabel.setVisible(true);

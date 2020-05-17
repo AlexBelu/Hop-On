@@ -71,6 +71,8 @@ public class UserService {
         return pilots;
     }
 
+    public static List <Customer> getCustomers(){return customers;}
+
     public static List<Flight> getFlights() {
         return flights;
     }
@@ -120,8 +122,9 @@ public class UserService {
         UserService.loadFlightsFromFile();
         for (Flight flight : flights) {
             if (!(findCustomer(username).getMyFlights().contains(flight)))
-               if(flight.getDeparture().equals(departure)&&flight.getArrival().equals(arrival))
-                availableFlights.add(flight);
+               if(flight.getDeparture().equals(departure)&&flight.getArrival().equals(arrival)) {
+                   availableFlights.add(flight);
+               }
         }
         return availableFlights;
     }
@@ -153,6 +156,7 @@ public class UserService {
 
        //UserService.findPilot("Vladovici Ana").addFlight(2,checkAvailabilityFlight("Vladovici Ana"));
         //System.out.println(UserService.findPilot("Vladovici Ana").getMyFlights());
+        System.out.println(checkAvailableFlightsUser("Vancea Roxana", "Timisoara", "Londra"));
 
     }
 }
