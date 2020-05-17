@@ -22,6 +22,7 @@ public class PilotViewFlights  extends JFrame {
         JPanel panel = new JPanel();
         welcome.setBounds(167, 10, 250, 100);
         panel.add(welcome);
+        getContentPane().add(panel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         String[] b = UserService.findPilot(LoginView.getTxtUsername()).showFlights();
 
