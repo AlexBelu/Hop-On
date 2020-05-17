@@ -90,6 +90,13 @@ public class UserService {
         return null;
     }
 
+    public static Customer findCustomer(String username) {
+        for (Customer customer : customers)
+            if (customer.getUsername().equals(username))
+                return customer;
+        return null;
+    }
+
     public static ArrayList<Flight> checkAvailabilityFlight(String username) throws IOException {
         ArrayList<Flight> availableFlights = new ArrayList<>();
         UserService.loadFlightsFromFile();
