@@ -58,6 +58,18 @@ public class Customer extends User {
             e.printStackTrace();
         }
     }
+    public String[] showBoardingCards() {
+        if(boardingCard.size() == 0){
+            return null;
+        }
+        else {
+            String[] flight_array = new String[boardingCard.size()];
+            for (int i = 0; i < boardingCard.size(); i++) {
+                flight_array[i] = boardingCard.get(i).toString();
+            }
+            return flight_array;
+        }
+    }
     public String toString()
     {
         return super.toString() + " Boarding cards:" +  boardingCard;
