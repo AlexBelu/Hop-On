@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84d1b675-e47f-46c5-8150-396e1a9d0ad0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/Check_inView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/Check_inView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/BoardingTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/BoardingTable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +51,7 @@
       <recent name="D:\POO\Hop-On\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.UserService">
+  <component name="RunManager" selected="Application.LoginView">
     <configuration name="Check_inView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="view.Check_inView" />
       <module name="Hop-On" />
@@ -123,8 +119,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.UserService" />
         <item itemvalue="Application.LoginView" />
+        <item itemvalue="Application.UserService" />
         <item itemvalue="Application.Check_inView" />
         <item itemvalue="Application.JSONWriter" />
         <item itemvalue="Application.JSONWriterFlights" />
