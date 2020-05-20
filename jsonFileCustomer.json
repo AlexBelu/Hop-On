@@ -10,6 +10,14 @@
     "usernamePilot1" : null,
     "usernamePilot2" : null,
     "noPilots" : 0
+  }, {
+    "flightNo" : 2,
+    "departure" : "Timisoara",
+    "arrival" : "Berlin",
+    "date" : "20-05-2020",
+    "usernamePilot1" : null,
+    "usernamePilot2" : null,
+    "noPilots" : 0
   } ]
 }, {
   "username" : "Fodor Razvan",

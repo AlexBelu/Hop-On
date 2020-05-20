@@ -3,6 +3,7 @@ package model;
 import services.UserService;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class Flight {
     private int flightNo;
@@ -86,5 +87,4 @@ public class Flight {
 
 
     }
-
 }
