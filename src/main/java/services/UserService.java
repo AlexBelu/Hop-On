@@ -3,7 +3,9 @@ import exceptions.*;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import exceptions.IncorrectUsernameException;
 import model.*;
@@ -128,6 +130,27 @@ public class UserService {
         }
         return availableFlights;
     }
+
+
+    public static ArrayList<Flight> checkIn(String username) throws IOException {
+        ArrayList<Flight> checkInavailable = new ArrayList<>();
+        UserService.loadFlightsFromFile();
+        Date date = new Date();
+        SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
+        String s = formatter.format(date);
+        int valData = Character.getNumericValue(s.charAt(0)) * 10 + Character.getNumericValue(s.charAt(1));
+        for(Flight flight:findCustomer(username).getMyFlights()){
+            int a = Character.getNumericValue(flight.getDate().charAt(0));
+            int b = Character.getNumericValue(flight.getDate().charAt(1));
+            int c = 10*a + b;
+            int dif = c - valData;
+            if(dif <= 2){
+                checkInavailable.add(flight);
+            }
+        }
+        return checkInavailable;
+    }
+
     public static Flight getFlight(int a )
     {  Flight b = null;
         for(Flight flight:flights) {
@@ -149,6 +172,7 @@ public class UserService {
             return array;
         }
     }
+
     public static void main(String[] argv) throws IOException {
        loadUsersFromFile();
        loadFlightsFromFile();
@@ -157,6 +181,12 @@ public class UserService {
        //UserService.findPilot("Vladovici Ana").addFlight(2,checkAvailabilityFlight("Vladovici Ana"));
         //System.out.println(UserService.findPilot("Vladovici Ana").getMyFlights());
         System.out.println(checkAvailableFlightsUser("Vancea Roxana", "Timisoara", "Londra"));
-
+        Date date = new Date();
+        SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
+        System.out.println(formatter.format(date));
+        String s = formatter.format(date);
+        int valData = Character.getNumericValue(s.charAt(0)) * 10 + Character.getNumericValue(s.charAt(1));
+        System.out.println(valData);
+        System.out.println(checkIn("Vancea Roxana"));
     }
 }
