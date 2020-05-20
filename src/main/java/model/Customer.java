@@ -7,10 +7,11 @@ import services.JSONWriterFlights;
 import services.UserService;
 
 import java.io.IOException;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Customer extends User {
-    private ArrayList<Flight> boardingCard;
+    private ArrayList<Flight> boardingCard=new ArrayList<>();;
     public Customer(String username, String password)
     {
         super(username,password,"Customer");
@@ -35,7 +36,10 @@ public class Customer extends User {
             e.printStackTrace();
         }
     }
-
+    public ArrayList<Flight> getBoardingCard()
+    {
+        return boardingCard;
+    }
     public void addBoardingCards(int flightNo, ArrayList<Flight> flight_list) {
         Flight a = null;
         for (Flight flight : flight_list) {
@@ -53,5 +57,9 @@ public class Customer extends User {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+    public String toString()
+    {
+        return super.toString() + " Boarding cards:" +  boardingCard;
     }
 }

@@ -2,6 +2,7 @@ package view;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.io.IOException;
 
 
 public class CustomerView extends JFrame {
@@ -47,7 +48,12 @@ public class CustomerView extends JFrame {
             checkin=new JButton("Check-in");
             checkin.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent actionEvent) {
-                    Check_inView regFace = new Check_inView();
+                    Check_inView regFace = null;
+                    try {
+                        regFace = new Check_inView();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                     regFace.setVisible(true);
                     dispose();
                 }

@@ -2,26 +2,28 @@
   "username" : "Vancea Roxana",
   "password" : "��g�ÿ���iԜ\u0017���n�2�����\u0014\u000B��@��/+0u���i+\u001A4�;Y2Q�\r-2���&f$k�B4\rx�",
   "role" : "Customer",
-  "myFlights" : [ {
-    "flightNo" : 1,
-    "departure" : "Timisoara",
-    "arrival" : "Londra",
-    "date" : "29-05-2020",
-    "usernamePilot1" : null,
-    "usernamePilot2" : null,
-    "noPilots" : 0
-  }, {
-    "flightNo" : 2,
-    "departure" : "Timisoara",
-    "arrival" : "Berlin",
-    "date" : "20-05-2020",
-    "usernamePilot1" : null,
-    "usernamePilot2" : null,
-    "noPilots" : 0
-  } ]
+  "myFlights" : [ ],
+  "boardingCard" : [ ]
 }, {
   "username" : "Fodor Razvan",
   "password" : "����\"k�8\u0011��]ڱ��\u0003�f� \u000B�\u001E\u0005�2��Dֺ��#q��ڲX],u�C�u��\\q�d�i*E �Q��X",
   "role" : "Customer",
-  "myFlights" : [ ]
+  "myFlights" : [ {
+    "flightNo" : 3,
+    "departure" : "Bucuresti",
+    "arrival" : "Roma",
+    "date" : "21-05-2020",
+    "usernamePilot1" : null,
+    "usernamePilot2" : null,
+    "noPilots" : 0
+  } ],
+  "boardingCard" : [ {
+    "flightNo" : 3,
+    "departure" : "Bucuresti",
+    "arrival" : "Roma",
+    "date" : "21-05-2020",
+    "usernamePilot1" : null,
+    "usernamePilot2" : null,
+    "noPilots" : 0
+  } ]
 } ]

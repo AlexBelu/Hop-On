@@ -76,7 +76,6 @@ public class LoginView extends JFrame {
 
     public static void main(String[] args) throws Exception {
         UserService.loadUsersFromFile();
-
         LoginView view = new LoginView();
         view.setVisible(true);
     }
