@@ -48,7 +48,7 @@ public class JSONWriter {
         ArrayList<Customer> users2 = new ArrayList<Customer>();
         Customer customer1 = new Customer ("Vancea Roxana", encodePassword("Vancea Roxana", "mamaNatura"));
         Customer customer2 = new Customer ("Fodor Razvan", encodePassword("Fodor Razvan", "lotifan"));
-        users2.add(customer1);
+       users2.add(customer1);
         users2.add(customer2);
         try {
             ObjectMapper objectMapper1 = new ObjectMapper();

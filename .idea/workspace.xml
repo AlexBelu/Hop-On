@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84d1b675-e47f-46c5-8150-396e1a9d0ad0" name="Default Changelist" comment="">
+    <list default="true" id="84d1b675-e47f-46c5-8150-396e1a9d0ad0" name="Default Changelist" comment="[HO-38] Move project resources.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsonFileCustomer.json" beforeDir="false" afterPath="$PROJECT_DIR$/jsonFileCustomer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/BoardingTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/BoardingTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsonFileCustomer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jsonFilePilot.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +53,7 @@
       <recent name="D:\POO\Hop-On\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JSONWriterFlights">
+  <component name="RunManager" selected="Application.JSONWriter">
     <configuration name="Check_inView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="view.Check_inView" />
       <module name="Hop-On" />
@@ -121,8 +121,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JSONWriterFlights" />
         <item itemvalue="Application.JSONWriter" />
+        <item itemvalue="Application.JSONWriterFlights" />
         <item itemvalue="Application.LoginView" />
         <item itemvalue="Application.UserService" />
         <item itemvalue="Application.Check_inView" />
@@ -217,7 +217,21 @@
       <option name="project" value="LOCAL" />
       <updated>1590000265146</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="[HO-38] Move project resources.">
+      <created>1590321126603</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1590321126603</updated>
+    </task>
+    <task id="LOCAL-00013" summary="[HO-38] Move project resources. - UPDATE">
+      <created>1590321433464</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1590321433464</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -232,7 +246,9 @@
     <MESSAGE value="[HO-28] Create a method for check-in." />
     <MESSAGE value="[HO-30] Create a GUI to see the flights for which the check-in is available and to select one." />
     <MESSAGE value="[HO-33] Create a GUI to display the boarding cards." />
-    <option name="LAST_COMMIT_MESSAGE" value="[HO-33] Create a GUI to display the boarding cards." />
+    <MESSAGE value="[HO-38] Move project resources." />
+    <MESSAGE value="[HO-38] Move project resources. - UPDATE" />
+    <option name="LAST_COMMIT_MESSAGE" value="[HO-38] Move project resources. - UPDATE" />
   </component>
   <component name="WindowStateProjectService">
     <state x="280" y="0" key="#Project_Structure" timestamp="1589363741788">
@@ -249,18 +265,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="566" y="271" width="403" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1589716841875" />
-    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588087558704">
+    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590321384653">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1588087558704" />
+    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1590321384653" />
     <state x="516" y="259" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1588336546893">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="516" y="259" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1588336546893" />
-    <state x="269" y="0" key="CommitChangelistDialog2" timestamp="1590000263795">
+    <state x="269" y="0" key="CommitChangelistDialog2" timestamp="1590321550899">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="269" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1590000263795" />
+    <state x="269" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1590321550899" />
     <state x="323" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1589998429937" />
     <state x="121" y="50" key="DiffContextDialog" timestamp="1587657233417">
       <screen x="0" y="0" width="1280" height="680" />
@@ -270,25 +286,25 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1587809068131" />
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1590000910447">
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1590321684798">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1590000910447" />
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1590321684798" />
     <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589999231701" />
-    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1590000910446">
+    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1590321684798">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1590000910446" />
+    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1590321684798" />
     <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589999231701" />
-    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1590000910446">
+    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1590321684798">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1590000910446" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1590321684798" />
     <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589999231701" />
-    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1590000910446">
+    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1590321684798">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1590000910446" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1590321684798" />
     <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589999231701" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1589362087794">
       <screen x="0" y="0" width="1536" height="824" />
@@ -315,10 +331,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1587824520161" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1590000282212">
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1590321560614">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1590000282212" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1590321560614" />
     <state x="280" y="90" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1589535471755" />
     <state x="375" y="234" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1587808933297">
       <screen x="0" y="0" width="1280" height="680" />
