@@ -3,8 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="84d1b675-e47f-46c5-8150-396e1a9d0ad0" name="Default Changelist" comment="[HO-38] Move project resources.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsonFileCustomer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jsonFilePilot.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hop-On.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Hop-On.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jsonFileFlight.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jsonFileFlight.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jsonFilePilot.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jsonFilePilot.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jsonFilePilot.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jsonFilePilot.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +58,7 @@
       <recent name="D:\POO\Hop-On\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JSONWriter">
+  <component name="RunManager" selected="Application.LoginView">
     <configuration name="Check_inView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="view.Check_inView" />
       <module name="Hop-On" />
@@ -121,9 +126,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LoginView" />
         <item itemvalue="Application.JSONWriter" />
         <item itemvalue="Application.JSONWriterFlights" />
-        <item itemvalue="Application.LoginView" />
         <item itemvalue="Application.UserService" />
         <item itemvalue="Application.Check_inView" />
       </list>
@@ -286,26 +291,26 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1587809068131" />
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1590321684798">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1590325195880">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1590321684798" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589999231701" />
-    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1590321684798">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590325195880" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1590325195880">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1590321684798" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589999231701" />
-    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1590321684798">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1590325195880" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1590325195880">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1590321684798" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589999231701" />
-    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1590321684798">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1590325195880" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1590325195880">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1590321684798" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589999231701" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1590325195880" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1589362087794">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

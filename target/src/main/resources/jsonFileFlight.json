@@ -59,9 +59,9 @@
   "departure" : "Cluj-Napoca",
   "arrival" : "Roma",
   "date" : "15-05-2020",
-  "usernamePilot1" : null,
+  "usernamePilot1" : "Vladovici Ana",
   "usernamePilot2" : null,
-  "noPilots" : 0
+  "noPilots" : 1
 }, {
   "flightNo" : 9,
   "departure" : "Cluj-Napoca",

@@ -15,5 +15,13 @@
     "usernamePilot1" : "Vladovici Ana",
     "usernamePilot2" : null,
     "noPilots" : 1
+  }, {
+    "flightNo" : 8,
+    "departure" : "Cluj-Napoca",
+    "arrival" : "Roma",
+    "date" : "15-05-2020",
+    "usernamePilot1" : "Vladovici Ana",
+    "usernamePilot2" : null,
+    "noPilots" : 1
   } ]
 } ]
