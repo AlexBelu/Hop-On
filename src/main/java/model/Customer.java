@@ -23,18 +23,11 @@ public class Customer extends User {
         for (Flight flight : flight_list) {
             if (flightNo == flight.getFlightNo()) {
                 this.myFlights.add(flight);
-                a=flight;
+                a = flight;
             }
         }
         flight_list.remove(a);
-        try {
-            ObjectMapper objectMapper1 = new ObjectMapper();
-            objectMapper1.writerWithDefaultPrettyPrinter().writeValue(UserService.getPathCustomer().toFile(), UserService.getCustomers());
-            ObjectMapper objectMapper2 = new ObjectMapper();
-            objectMapper2.writerWithDefaultPrettyPrinter().writeValue(JSONWriterFlights.getPathFlight().toFile(), UserService.getFlights());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        UserService.writeCustomers();
     }
     public ArrayList<Flight> getBoardingCard()
     {

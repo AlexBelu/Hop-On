@@ -1,5 +1,7 @@
 package services;
 import exceptions.*;
+
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -12,6 +14,7 @@ import model.*;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.io.FileUtils;
+import view.LoginView;
 
 
 public class UserService {
@@ -19,36 +22,62 @@ public class UserService {
     private static List<Pilot> pilots;
     private static List<Customer> customers;
     private static List<Flight> flights;
-    private static final Path PILOTS_PATH = FileSystemService.getPathToFile("jsonFilePilot.json");
-    private static final Path CUSTOMERS_PATH = FileSystemService.getPathToFile("jsonFileCustomer.json");
-    private static final Path FLIGHT_PATH = FileSystemService.getPathToFile("jsonFileFlight.json");
+    private static  Path PILOTS_PATH=FileSystemService.getPathToFile("src/main/resources/jsonFilePilot.json");
+    private static  Path CUSTOMERS_PATH=FileSystemService.getPathToFile("src/main/resources/jsonFileCustomer.json"); ;
+    private static  Path FLIGHT_PATH=FileSystemService.getPathToFile("src/main/resources/jsonFileFlight.json"); ;
     private static String LoginRole;
 
-    public static void loadUsersFromFile() throws IOException {
+    public static void loadPilotsfromFile(String path) throws IOException {
+            PILOTS_PATH = FileSystemService.getPathToFile(path);
+        try {
+            ObjectMapper objectMapper1 = new ObjectMapper();
+            pilots = objectMapper1.readValue(PILOTS_PATH.toFile(), new TypeReference<List<Pilot>>() {
+            });
+        }catch (FileNotFoundException a) {
+            System.out.println("Nu exista fisierul pt pilot");
+        }
 
-        if (!Files.exists(PILOTS_PATH)) {
-            FileUtils.copyURLToFile(UserService.class.getClassLoader().getResource("jsonFilePilot.json"), PILOTS_PATH.toFile());
-        }
-        if (!Files.exists(CUSTOMERS_PATH)) {
-            FileUtils.copyURLToFile(UserService.class.getClassLoader().getResource("jsonFileCustomer.json"), CUSTOMERS_PATH.toFile());
-        }
-        ObjectMapper objectMapper1 = new ObjectMapper();
-        pilots = objectMapper1.readValue(PILOTS_PATH.toFile(), new TypeReference<List<Pilot>>() {
-        });
-        ObjectMapper objectMapper2 = new ObjectMapper();
-        customers = objectMapper2.readValue(CUSTOMERS_PATH.toFile(), new TypeReference<List<Customer>>() {
-        });
+
     }
 
-    public static void loadFlightsFromFile() throws IOException {
-        if (!Files.exists(FLIGHT_PATH)) {
-            FileUtils.copyURLToFile(UserService.class.getClassLoader().getResource("jsonFileFlight.json"), FLIGHT_PATH.toFile());
-        }
-        ObjectMapper objectMapper3 = new ObjectMapper();
+    public static void loadCustomersfromFile(String path) throws IOException {
+         CUSTOMERS_PATH=  FileSystemService.getPathToFile(path);
+     try{
+        ObjectMapper objectMapper1 = new ObjectMapper();
+        customers = objectMapper1.readValue( CUSTOMERS_PATH.toFile(), new TypeReference<List<Customer>>() {
+        });
+     }catch (FileNotFoundException a) {
+         System.out.println("Nu exista fisierul pt customer");
+     }
+
+    }
+
+
+    public static void loadFlightsFromFile(String path) throws IOException {
+        FLIGHT_PATH=  FileSystemService.getPathToFile(path);
+
+      try {  ObjectMapper objectMapper3 = new ObjectMapper();
         flights = objectMapper3.readValue(FLIGHT_PATH.toFile(), new TypeReference<List<Flight>>() {
         });
+      }catch (FileNotFoundException a) {
+          System.out.println("Nu exista fisierul pt zbor");
+      }
+
+    }
+    public static void copy() throws IOException {
+       if(!Files.exists((UserService.getPathCustomer())))
+           FileUtils.copyURLToFile(UserService.class.getClassLoader().getResource("jsonFileCustomer.json"), UserService.getPathCustomer().toFile());
+       if(!Files.exists((UserService.getFlightPath())))
+        FileUtils.copyURLToFile(UserService.class.getClassLoader().getResource("jsonFileFlight.json"), UserService.getFlightPath().toFile());
+        if(!Files.exists((UserService.getPathPilot())))
+        FileUtils.copyURLToFile(UserService.class.getClassLoader().getResource("jsonFilePilot.json"), UserService.getPathPilot().toFile());
     }
 
+
+    public static Path getFlightPath()
+    {
+        return FLIGHT_PATH;
+    }
     public static void loginTry(String username, String password) throws IncorrectUsernameException, IncorrectPasswordException {
         int find = 0;
         for (Pilot pilot : pilots)
@@ -107,7 +136,7 @@ public class UserService {
 
     public static ArrayList<Flight> checkAvailabilityFlight(String username) throws IOException {
         ArrayList<Flight> availableFlights = new ArrayList<>();
-        UserService.loadFlightsFromFile();
+        //UserService.loadFlightsFromFile("src/main/resources/jsonFileFlight");
         for (Flight flight : flights) {
             if ((flight.getUsernamePilot1() == null || !(flight.getUsernamePilot1().equals(username))
                     && (flight.getUsernamePilot2() == null || !(flight.getUsernamePilot2().equals(username))))
@@ -121,7 +150,7 @@ public class UserService {
 
     public static ArrayList<Flight> checkAvailableFlightsUser(String username, String departure, String arrival) throws IOException {
         ArrayList<Flight> availableFlights = new ArrayList<>();
-        UserService.loadFlightsFromFile();
+        //UserService.loadFlightsFromFile("src/main/resources/jsonFileFlight");
         for (Flight flight : flights) {
             if (!(findCustomer(username).getMyFlights().contains(flight)))
                if(flight.getDeparture().equals(departure)&&flight.getArrival().equals(arrival)) {
@@ -134,7 +163,7 @@ public class UserService {
 
     public static ArrayList<Flight> checkIn(String username) throws IOException {
         ArrayList<Flight> checkInavailable = new ArrayList<>();
-        UserService.loadFlightsFromFile();
+        //UserService.loadFlightsFromFile("src/main/resources/jsonFileFlight");
         Date date = new Date();
         SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
         String s = formatter.format(date);
@@ -172,21 +201,41 @@ public class UserService {
             return array;
         }
     }
+    public static void writePilots()
+    { try {
+        ObjectMapper objectMapper1 = new ObjectMapper();
+        objectMapper1.writerWithDefaultPrettyPrinter().writeValue(PILOTS_PATH.toFile(), pilots);
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+    }
+    public static void writeCustomers()
+    { try {
+        ObjectMapper objectMapper1 = new ObjectMapper();
+        objectMapper1.writerWithDefaultPrettyPrinter().writeValue(CUSTOMERS_PATH.toFile(), customers);
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+    }
+    public static void writeFlights()
+    { try {
+        ObjectMapper objectMapper1 = new ObjectMapper();
+        objectMapper1.writerWithDefaultPrettyPrinter().writeValue(FLIGHT_PATH.toFile(), flights);
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+    }
+
+
 
     public static void main(String[] argv) throws IOException {
-       loadUsersFromFile();
-       loadFlightsFromFile();
+       loadCustomersfromFile("src/main/resources/da");
+        loadPilotsfromFile("src/main/resources/nu");
+       loadFlightsFromFile("src/main/resources/jsonFileFlight.json");
+       System.out.println(CUSTOMERS_PATH);
+       System.out.println(customers);
 
 
-       //UserService.findPilot("Vladovici Ana").addFlight(2,checkAvailabilityFlight("Vladovici Ana"));
-        //System.out.println(UserService.findPilot("Vladovici Ana").getMyFlights());
-        System.out.println(checkAvailableFlightsUser("Vancea Roxana", "Timisoara", "Londra"));
-        Date date = new Date();
-        SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
-        System.out.println(formatter.format(date));
-        String s = formatter.format(date);
-        int valData = Character.getNumericValue(s.charAt(0)) * 10 + Character.getNumericValue(s.charAt(1));
-        System.out.println(valData);
-        System.out.println(checkIn("Vancea Roxana"));
+
     }
 }

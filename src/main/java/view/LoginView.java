@@ -2,12 +2,14 @@ package view;
 
 import controller.LoginController;
 import model.Pilot;
+import org.apache.commons.io.FileUtils;
 import services.UserService;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 
 public class LoginView extends JFrame {
     private JButton btnRegister;
@@ -75,7 +77,11 @@ public class LoginView extends JFrame {
     }
 
     public static void main(String[] args) throws Exception {
-        UserService.loadUsersFromFile();
+        UserService.copy();
+        UserService.loadCustomersfromFile("src/main/resources/jsonFileCustomer.json");
+        UserService.loadPilotsfromFile("src/main/resources/jsonFilePilot.json");
+        UserService.loadFlightsFromFile("src/main/resources/jsonFileFlight.json");
+
         LoginView view = new LoginView();
         view.setVisible(true);
     }

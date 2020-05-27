@@ -14,8 +14,8 @@ import java.util.ArrayList;
 import model.*;
 public class JSONWriter {
         private static FileWriter file;
-        private static final Path PILOT_PATH = FileSystemService.getPathToFile("jsonFilePilot.json");
-        private static final Path CUSTOMER_PATH = FileSystemService.getPathToFile("jsonFileCustomer.json");
+        private static final Path PILOT_PATH = FileSystemService.getPathToFile("src/main/resources/jsonFilePilot.json");
+        private static final Path CUSTOMER_PATH = FileSystemService.getPathToFile("src/main/resources/jsonFileCustomer.json");
 
         @SuppressWarnings("unchecked")
         static String encodePassword(String salt, String password) {

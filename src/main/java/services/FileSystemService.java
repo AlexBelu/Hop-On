@@ -8,6 +8,10 @@ public class FileSystemService {
     private static final String USER_FOLDER = System.getProperty("user.dir");
     public static final Path APPLICATION_HOME_PATH = Paths.get(USER_FOLDER);
     public static Path getPathToFile(String... path) {
-        return APPLICATION_HOME_PATH.resolve(Paths.get("src/main/resources", path));
+        return APPLICATION_HOME_PATH.resolve(Paths.get("", path));
     }
+ public static void main(String[] argv)
+ {
+     System.out.println(getPathToFile("src/main/resources/jsonFileFlight.json"));
+ }
 }
