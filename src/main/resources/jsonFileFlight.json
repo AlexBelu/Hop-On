@@ -35,9 +35,9 @@
   "departure" : "Timisoara",
   "arrival" : "Paris",
   "date" : "15-06-2020",
-  "usernamePilot1" : "Vladovici Ana",
+  "usernamePilot1" : null,
   "usernamePilot2" : null,
-  "noPilots" : 1
+  "noPilots" : 0
 }, {
   "flightNo" : 6,
   "departure" : "Berlin",

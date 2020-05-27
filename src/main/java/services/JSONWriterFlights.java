@@ -12,7 +12,7 @@ import java.util.List;
 
 public class JSONWriterFlights {
     private static FileWriter file;
-    private static final Path FLIGHT_PATH = FileSystemService.getPathToFile("jsonFileFlight.json");
+    private static final Path FLIGHT_PATH = FileSystemService.getPathToFile("src/main/resources/jsonFileFlight.json");
 
     public static Path getPathFlight(){
         return FLIGHT_PATH;

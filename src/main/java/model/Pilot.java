@@ -31,14 +31,8 @@ public class Pilot extends User {
             }
         }
         flight_list.remove(a);
-        try {
-            ObjectMapper objectMapper1 = new ObjectMapper();
-            objectMapper1.writerWithDefaultPrettyPrinter().writeValue(UserService.getPathPilot().toFile(), UserService.getPilots());
-            ObjectMapper objectMapper2 = new ObjectMapper();
-            objectMapper2.writerWithDefaultPrettyPrinter().writeValue(JSONWriterFlights.getPathFlight().toFile(), UserService.getFlights());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        UserService.writePilots();
+        UserService.writeFlights();
     }
 }
 
