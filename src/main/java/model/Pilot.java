@@ -31,8 +31,8 @@ public class Pilot extends User {
             }
         }
         flight_list.remove(a);
-        UserService.writePilots();
-        UserService.writeFlights();
+        UserService.writePilots(UserService.getPilots());
+        UserService.writeFlights(UserService.getFlights());
     }
 }
 

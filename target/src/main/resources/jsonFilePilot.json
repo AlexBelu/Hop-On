@@ -16,10 +16,10 @@
     "usernamePilot2" : null,
     "noPilots" : 1
   }, {
-    "flightNo" : 7,
-    "departure" : "Londra",
-    "arrival" : "Timisoara",
-    "date" : "02-06-2020",
+    "flightNo" : 9,
+    "departure" : "Cluj-Napoca",
+    "arrival" : "London",
+    "date" : "03-06-2020",
     "usernamePilot1" : "Vladovici Ana",
     "usernamePilot2" : null,
     "noPilots" : 1

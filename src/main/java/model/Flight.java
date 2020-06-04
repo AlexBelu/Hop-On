@@ -3,9 +3,11 @@ package model;
 import services.UserService;
 
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Objects;
 
-public class Flight {
+public class Flight implements Serializable {
     private int flightNo;
     private String departure;
     private String arrival;
@@ -58,6 +60,25 @@ public class Flight {
 
     public String getUsernamePilot1() {
         return usernamePilot1;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Flight)) return false;
+        Flight flight = (Flight) o;
+        return getFlightNo() == flight.getFlightNo() &&
+                getNoPilots() == flight.getNoPilots() &&
+                Objects.equals(getDeparture(), flight.getDeparture()) &&
+                Objects.equals(getArrival(), flight.getArrival()) &&
+                Objects.equals(getDate(), flight.getDate()) &&
+                Objects.equals(getUsernamePilot1(), flight.getUsernamePilot1()) &&
+                Objects.equals(getUsernamePilot2(), flight.getUsernamePilot2());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getFlightNo(), getDeparture(), getArrival(), getDate(), getUsernamePilot1(), getUsernamePilot2(), getNoPilots());
     }
 
     public void setUsernamePilot1(String usernamePilot1) {
