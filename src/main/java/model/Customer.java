@@ -9,6 +9,7 @@ import services.UserService;
 import java.io.IOException;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Customer extends User {
     private ArrayList<Flight> boardingCard=new ArrayList<>();;
@@ -27,7 +28,7 @@ public class Customer extends User {
             }
         }
         flight_list.remove(a);
-        UserService.writeCustomers();
+        UserService.writeCustomers(UserService.getCustomers());
     }
     public ArrayList<Flight> getBoardingCard()
     {
@@ -42,15 +43,25 @@ public class Customer extends User {
             }
         }
         flight_list.remove(a);
-        try {
-            ObjectMapper objectMapper1 = new ObjectMapper();
-            objectMapper1.writerWithDefaultPrettyPrinter().writeValue(UserService.getPathCustomer().toFile(), UserService.getCustomers());
-            ObjectMapper objectMapper2 = new ObjectMapper();
-            objectMapper2.writerWithDefaultPrettyPrinter().writeValue(JSONWriterFlights.getPathFlight().toFile(), UserService.getFlights());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+
+        UserService.writeCustomers(UserService.getCustomers());
+
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Customer)) return false;
+        if (!super.equals(o)) return false;
+        Customer customer = (Customer) o;
+        return Objects.equals(getBoardingCard(), customer.getBoardingCard());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), getBoardingCard());
+    }
+
     public String[] showBoardingCards() {
         if(boardingCard.size() == 0){
             return null;

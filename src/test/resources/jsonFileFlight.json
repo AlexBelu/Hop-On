@@ -27,9 +27,9 @@
   "departure" : "Bucuresti",
   "arrival" : "Paris",
   "date" : "17-06-2020",
-  "usernamePilot1" : "Vladovici Ana",
+  "usernamePilot1" : null,
   "usernamePilot2" : null,
-  "noPilots" : 1
+  "noPilots" : 0
 }, {
   "flightNo" : 5,
   "departure" : "Timisoara",
@@ -43,38 +43,6 @@
   "departure" : "Berlin",
   "arrival" : "Roma",
   "date" : "13-06-2020",
-  "usernamePilot1" : null,
-  "usernamePilot2" : null,
-  "noPilots" : 0
-}, {
-  "flightNo" : 7,
-  "departure" : "Londra",
-  "arrival" : "Timisoara",
-  "date" : "02-06-2020",
-  "usernamePilot1" : null,
-  "usernamePilot2" : null,
-  "noPilots" : 0
-}, {
-  "flightNo" : 8,
-  "departure" : "Cluj-Napoca",
-  "arrival" : "Roma",
-  "date" : "15-05-2020",
-  "usernamePilot1" : null,
-  "usernamePilot2" : null,
-  "noPilots" : 0
-}, {
-  "flightNo" : 9,
-  "departure" : "Cluj-Napoca",
-  "arrival" : "London",
-  "date" : "03-06-2020",
-  "usernamePilot1" : "Vladovici Ana",
-  "usernamePilot2" : null,
-  "noPilots" : 1
-}, {
-  "flightNo" : 10,
-  "departure" : "Bucuresti",
-  "arrival" : "Copenhaga",
-  "date" : "21-05-2020",
   "usernamePilot1" : null,
   "usernamePilot2" : null,
   "noPilots" : 0

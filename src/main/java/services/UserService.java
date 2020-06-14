@@ -3,6 +3,7 @@ import exceptions.*;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.lang.reflect.Array;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.text.SimpleDateFormat;
@@ -19,19 +20,19 @@ import view.LoginView;
 
 public class UserService {
 
-    private static List<Pilot> pilots;
-    private static List<Customer> customers;
-    private static List<Flight> flights;
+    private static ArrayList<Pilot> pilots;
+    private static ArrayList<Customer> customers;
+    private static ArrayList<Flight> flights;
     private static  Path PILOTS_PATH=FileSystemService.getPathToFile("src/main/resources/jsonFilePilot.json");
     private static  Path CUSTOMERS_PATH=FileSystemService.getPathToFile("src/main/resources/jsonFileCustomer.json"); ;
     private static  Path FLIGHT_PATH=FileSystemService.getPathToFile("src/main/resources/jsonFileFlight.json"); ;
     private static String LoginRole;
 
-    public static void loadPilotsfromFile(String path) throws IOException {
+    public static void loadPilotsfromFile(String path) throws IOException { //
             PILOTS_PATH = FileSystemService.getPathToFile(path);
         try {
             ObjectMapper objectMapper1 = new ObjectMapper();
-            pilots = objectMapper1.readValue(PILOTS_PATH.toFile(), new TypeReference<List<Pilot>>() {
+            pilots = objectMapper1.readValue(PILOTS_PATH.toFile(), new TypeReference<ArrayList<Pilot>>() {
             });
         }catch (FileNotFoundException a) {
             System.out.println("Nu exista fisierul pt pilot");
@@ -40,11 +41,11 @@ public class UserService {
 
     }
 
-    public static void loadCustomersfromFile(String path) throws IOException {
+    public static void loadCustomersfromFile(String path) throws IOException {  //
          CUSTOMERS_PATH=  FileSystemService.getPathToFile(path);
      try{
         ObjectMapper objectMapper1 = new ObjectMapper();
-        customers = objectMapper1.readValue( CUSTOMERS_PATH.toFile(), new TypeReference<List<Customer>>() {
+        customers = objectMapper1.readValue( CUSTOMERS_PATH.toFile(), new TypeReference<ArrayList<Customer>>() {
         });
      }catch (FileNotFoundException a) {
          System.out.println("Nu exista fisierul pt customer");
@@ -53,11 +54,11 @@ public class UserService {
     }
 
 
-    public static void loadFlightsFromFile(String path) throws IOException {
+    public static void loadFlightsFromFile(String path) throws IOException {   //
         FLIGHT_PATH=  FileSystemService.getPathToFile(path);
 
       try {  ObjectMapper objectMapper3 = new ObjectMapper();
-        flights = objectMapper3.readValue(FLIGHT_PATH.toFile(), new TypeReference<List<Flight>>() {
+        flights = objectMapper3.readValue(FLIGHT_PATH.toFile(), new TypeReference<ArrayList<Flight>>() {
         });
       }catch (FileNotFoundException a) {
           System.out.println("Nu exista fisierul pt zbor");
@@ -78,7 +79,7 @@ public class UserService {
     {
         return FLIGHT_PATH;
     }
-    public static void loginTry(String username, String password) throws IncorrectUsernameException, IncorrectPasswordException {
+    public static void loginTry(String username, String password) throws IncorrectUsernameException, IncorrectPasswordException { //
         int find = 0;
         for (Pilot pilot : pilots)
             if (pilot.getUsername().equals(username)) {
@@ -98,15 +99,15 @@ public class UserService {
             throw new IncorrectUsernameException(username);
     }
 
-    public static List<Pilot> getPilots() {
+    public static ArrayList<Pilot> getPilots() {
         return pilots;
-    }
+    }//
 
-    public static List <Customer> getCustomers(){return customers;}
+    public static ArrayList <Customer> getCustomers(){return customers;}//
 
-    public static List<Flight> getFlights() {
+    public static ArrayList<Flight> getFlights() {
         return flights;
-    }
+    }//
 
     public static Path getPathPilot() {
         return PILOTS_PATH;
@@ -118,7 +119,7 @@ public class UserService {
 
     public static String getLoginRole() {
         return LoginRole;
-    }
+    }//
 
     public static Pilot findPilot(String username) {
         for (Pilot pilot : pilots)
@@ -201,24 +202,28 @@ public class UserService {
             return array;
         }
     }
-    public static void writePilots()
-    { try {
+    public static void writePilots(ArrayList<Pilot> a) //
+    {  pilots=a;
+        try {
         ObjectMapper objectMapper1 = new ObjectMapper();
         objectMapper1.writerWithDefaultPrettyPrinter().writeValue(PILOTS_PATH.toFile(), pilots);
     } catch (IOException e) {
         e.printStackTrace();
     }
     }
-    public static void writeCustomers()
-    { try {
+    public static void writeCustomers(ArrayList <Customer> a)//
+    {   customers=a;
+        try {
         ObjectMapper objectMapper1 = new ObjectMapper();
         objectMapper1.writerWithDefaultPrettyPrinter().writeValue(CUSTOMERS_PATH.toFile(), customers);
     } catch (IOException e) {
         e.printStackTrace();
     }
     }
-    public static void writeFlights()
-    { try {
+    public static void writeFlights(ArrayList<Flight> a) //
+
+    {  flights=a;
+        try {
         ObjectMapper objectMapper1 = new ObjectMapper();
         objectMapper1.writerWithDefaultPrettyPrinter().writeValue(FLIGHT_PATH.toFile(), flights);
     } catch (IOException e) {

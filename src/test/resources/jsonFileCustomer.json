@@ -8,22 +8,6 @@
   "username" : "Fodor Razvan",
   "password" : "����\"k�8\u0011��]ڱ��\u0003�f� \u000B�\u001E\u0005�2��Dֺ��#q��ڲX],u�C�u��\\q�d�i*E �Q��X",
   "role" : "Customer",
-  "myFlights" : [ {
-    "flightNo" : 1,
-    "departure" : "Timisoara",
-    "arrival" : "Londra",
-    "date" : "29-05-2020",
-    "usernamePilot1" : null,
-    "usernamePilot2" : null,
-    "noPilots" : 0
-  } ],
-  "boardingCard" : [ {
-    "flightNo" : 1,
-    "departure" : "Timisoara",
-    "arrival" : "Londra",
-    "date" : "29-05-2020",
-    "usernamePilot1" : null,
-    "usernamePilot2" : null,
-    "noPilots" : 0
-  } ]
+  "myFlights" : [ ],
+  "boardingCard" : [ ]
 } ]

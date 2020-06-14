@@ -1,9 +1,10 @@
 package model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Objects;
 
-abstract public class User {
+abstract public class User implements Serializable {
     protected String username;
     protected String password;
     protected String role;
@@ -17,7 +18,7 @@ abstract public class User {
 
     public ArrayList<Flight> getMyFlights() {
         return myFlights;
-    }
+    }//
 
     public User(){}
     public String getUsername() {
@@ -49,10 +50,14 @@ abstract public class User {
         if (this == o) return true;
         if (!(o instanceof User)) return false;
         User user = (User) o;
-        return getUsername().equals(user.getUsername()) &&
-                getPassword().equals(user.getPassword()) &&
-                getRole().equals(user.getRole());
+        return Objects.equals(getUsername(), user.getUsername()) &&
+                Objects.equals(getPassword(), user.getPassword()) &&
+                Objects.equals(getRole(), user.getRole()) &&
+                Objects.equals(getMyFlights(), user.getMyFlights());
     }
+
+
+
 
     @Override
     public int hashCode() {

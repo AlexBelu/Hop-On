@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84d1b675-e47f-46c5-8150-396e1a9d0ad0" name="Default Changelist" comment="[HO-38] Move project resources.">
+    <list default="true" id="84d1b675-e47f-46c5-8150-396e1a9d0ad0" name="Default Changelist" comment="[HO-40] [UT] As a user, I want to be able to login with an username and a password.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hop-On.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Hop-On.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Flight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Pilot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Pilot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/FileSystemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/FileSystemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/JSONWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/JSONWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/JSONWriterFlights.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/JSONWriterFlights.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/LoginView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/LoginView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jsonFileFlight.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jsonFileFlight.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jsonFilePilot.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jsonFilePilot.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/CustomerView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/CustomerView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Hop-On-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Hop-On-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jsonFileFlight.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jsonFileFlight.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jsonFilePilot.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jsonFilePilot.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/model/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Flight.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Flight.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/model/Pilot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Pilot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/FileSystemService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/FileSystemService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/JSONWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/JSONWriter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/JSONWriterFlights.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/JSONWriterFlights.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/services/UserService$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/UserService$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/services/UserService$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/UserService$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/services/UserService$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/UserService$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/LoginView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/LoginView$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/LoginView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/LoginView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/CustomerView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/CustomerView$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/CustomerView$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/CustomerView$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/CustomerView$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/CustomerView$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/CustomerView$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/CustomerView$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/CustomerView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/CustomerView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/libs/hamcrest-core-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/libs/junit-4.10.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/src/main/resources/jsonFileCustomer.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/src/main/resources/jsonFileCustomer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/src/main/resources/jsonFileFlight.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/src/main/resources/jsonFileFlight.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/src/main/resources/jsonFilePilot.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/src/main/resources/jsonFilePilot.json" afterDir="false" />
     </list>
@@ -48,7 +48,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="fixes" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -80,79 +80,90 @@
       <recent name="D:\POO\Hop-On\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LoginView">
-    <configuration name="FileSystemService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="services.FileSystemService" />
+  <component name="RunManager" selected="JUnit.LoginTests in Hop-On">
+    <configuration name="LoadFromFileTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Hop-On" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="services.*" />
+          <option name="PATTERN" value="LoginTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="LoginTests" />
+      <option name="MAIN_CLASS_NAME" value="LoginTests.LoadFromFileTest" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JSONWriter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="services.JSONWriter" />
+    <configuration name="LoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Hop-On" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="services.*" />
+          <option name="PATTERN" value="LoginTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="LoginTests" />
+      <option name="MAIN_CLASS_NAME" value="LoginTests.LoginTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JSONWriterFlights" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="services.JSONWriterFlights" />
+    <configuration name="LoginTest.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Hop-On" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="services.*" />
+          <option name="PATTERN" value="LoginTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="LoginTests" />
+      <option name="MAIN_CLASS_NAME" value="LoginTests.LoginTest" />
+      <option name="METHOD_NAME" value="test4" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="view.LoginView" />
+    <configuration name="LoginTests in Hop-On" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Hop-On" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="view.*" />
+          <option name="PATTERN" value="LoginTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="LoginTests" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="services.UserService" />
+    <configuration name="WriteTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Hop-On" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="services.*" />
+          <option name="PATTERN" value="LoginTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="LoginTests" />
+      <option name="MAIN_CLASS_NAME" value="LoginTests.WriteTests" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LoginView" />
-        <item itemvalue="Application.UserService" />
-        <item itemvalue="Application.JSONWriterFlights" />
-        <item itemvalue="Application.JSONWriter" />
-        <item itemvalue="Application.FileSystemService" />
+        <item itemvalue="JUnit.WriteTests" />
+        <item itemvalue="JUnit.LoginTests in Hop-On" />
+        <item itemvalue="JUnit.LoginTest.test4" />
+        <item itemvalue="JUnit.LoginTest" />
+        <item itemvalue="JUnit.LoadFromFileTest.test3" />
       </list>
     </recent_temporary>
   </component>
@@ -275,14 +286,19 @@
     <MESSAGE value="[HO-33] Create a GUI to display the boarding cards." />
     <MESSAGE value="[HO-38] Move project resources." />
     <MESSAGE value="[HO-38] Move project resources. - UPDATE" />
-    <option name="LAST_COMMIT_MESSAGE" value="[HO-38] Move project resources. - UPDATE" />
+    <MESSAGE value="[HO-40] [UT] As a user, I want to be able to login with an username and a password." />
+    <option name="LAST_COMMIT_MESSAGE" value="[HO-40] [UT] As a user, I want to be able to login with an username and a password." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="280" y="0" key="#Project_Structure" timestamp="1589363741788">
+    <state x="280" y="0" key="#Project_Structure" timestamp="1590598513576">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="233" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1587979902178" />
-    <state x="280" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1589363741788" />
+    <state x="280" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1590598513576" />
+    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1590592039570">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.824@0.0.1536.824" timestamp="1590592039570" />
     <state x="535" y="30" key="#com.intellij.ide.util.MemberChooser" timestamp="1588530884832">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -300,11 +316,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="516" y="259" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1588336546893" />
-    <state x="269" y="0" key="CommitChangelistDialog2" timestamp="1590321550899">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="323" y="0" key="CommitChangelistDialog2" timestamp="1591294429452">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="269" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1590321550899" />
-    <state x="323" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1589998429937" />
+    <state x="323" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1591294429452" />
     <state x="121" y="50" key="DiffContextDialog" timestamp="1587657233417">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -313,26 +329,26 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1587809068131" />
-    <state width="746" height="210" key="GridCell.Tab.0.bottom" timestamp="1590509120514">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1590681955691">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1590321684798" />
-    <state width="746" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590509120514" />
-    <state width="746" height="210" key="GridCell.Tab.0.center" timestamp="1590509120513">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590681955691" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1590681955691">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1590321684798" />
-    <state width="746" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1590509120513" />
-    <state width="746" height="210" key="GridCell.Tab.0.left" timestamp="1590509120513">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1590681955691" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1590681955691">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1590321684798" />
-    <state width="746" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1590509120513" />
-    <state width="746" height="210" key="GridCell.Tab.0.right" timestamp="1590509120514">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1590681955691" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1590681955691">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1590321684798" />
-    <state width="746" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1590509120514" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1590681955691" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1589362087794">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -367,18 +383,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="375" y="234" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1280.680@0.0.1280.680" timestamp="1587808933297" />
+    <state x="516" y="125" key="git4idea.branch.GitSmartOperationDialog" timestamp="1591294368480">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="516" y="125" key="git4idea.branch.GitSmartOperationDialog/0.0.1536.824@0.0.1536.824" timestamp="1591294368480" />
     <state x="209" y="107" key="new project wizard" timestamp="1588700463620">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="209" y="107" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1588700463620" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1590497677303">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1590594092861">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1590497677303" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1590500818280">
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1590594092861" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1590592459059">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="359" y="120" width="672" height="560" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1589735485643" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1590500818280" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1590592459059" />
   </component>
 </project>
