@@ -15,8 +15,14 @@ public class UserTest {
     }
 
     @Test
-    public void test() throws IOException {
+    public void test() throws IOException { //pt Pilot showFlights() cand nu are niciun zbor
         UserService.loadPilotsfromFile("src/test/resources/JsonFilePilot.json");
         assertNull(UserService.getPilots().get(0).showFlights());
+    }
+
+    @Test
+    public void test1() throws IOException { //pt Customer showFlights() cand nu are niciun zbor
+        UserService.loadCustomersfromFile("src/test/resources/JsonFileCustomer.json");
+        assertNull(UserService.getCustomers().get(0).showFlights());
     }
 }

@@ -19,7 +19,7 @@ public class WriteTests {
         UserService.loadFlightsFromFile("src/test/resources/jsonFileFlight.json");
     }
     @Test
-    public void test1() throws IOException {
+    public void test1() throws IOException {    //si Customer showFlights()
         ArrayList<Customer> custo = new ArrayList<Customer>();
         ArrayList<Customer> custom = new ArrayList<Customer>();
         custo = SerializationUtils.clone(UserService.getCustomers());
@@ -30,10 +30,14 @@ public class WriteTests {
         Flight flight1 = new Flight(1, "Timisoara", "Londra", "29-05-2020");
         custom.get(0).getMyFlights().add(flight1);
         assertEquals(custom, UserService.getCustomers());
+
+        String[] fli = new String[1];
+        fli[0] = flight1.toString();
+        assertEquals(fli, UserService.getCustomers().get(0).showFlights());
         UserService.writeCustomers(custo);
     }
    @Test
-   public void test2() throws IOException { //si showFlights()
+   public void test2() throws IOException { //si Pilot showFlights()
        ArrayList<Pilot> custo = new ArrayList<Pilot>();
        ArrayList<Pilot> custom = new ArrayList<Pilot>();
 
