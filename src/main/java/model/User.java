@@ -74,7 +74,7 @@ abstract public class User implements Serializable {
                 '}';
     }
 
-    public String[] showFlights() {
+    public String[] showFlights() { //testata in UserTest si WriteTests
         if(myFlights.size() == 0){
             return null;
         }

@@ -135,7 +135,7 @@ public class UserService {
         return null;
     }
 
-    public static ArrayList<Flight> checkAvailabilityFlight(String username) throws IOException {
+    public static ArrayList<Flight> checkAvailabilityFlight(String username) throws IOException {   //testata in UserServiceTests
         ArrayList<Flight> availableFlights = new ArrayList<>();
         //UserService.loadFlightsFromFile("src/main/resources/jsonFileFlight");
         for (Flight flight : flights) {
