@@ -6,8 +6,10 @@ import org.apache.commons.lang3.SerializationUtils;
 import services.UserService;
 
 import java.lang.reflect.Array;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.io.IOException;
+import java.util.Date;
 import java.util.List;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
@@ -72,12 +74,16 @@ public class WriteTests {
         ArrayList<Customer> custom = new ArrayList<Customer>();
         custo = SerializationUtils.clone(UserService.getCustomers());
         custom = SerializationUtils.clone(UserService.getCustomers());
-        UserService.getCustomers().get(0).addFlight(5, UserService.getFlights());
-        UserService.writeCustomers(UserService.getCustomers());
-        UserService.loadCustomersfromFile("src/test/resources/jsonFileCustomer.json");
-        Flight flight5 = new Flight(5, "Timisoara", "Paris", "20-06-2020");
+        Date date = new Date();
+        SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy");
+        String s = formatter.format(date);
+        Flight flight5 = new Flight(5, "Timisoara", "Paris", s);
         ArrayList<Flight> ab = new ArrayList<>();
         ab.add(flight5);
+        UserService.getCustomers().get(0).addFlight(5, ab);
+        UserService.writeCustomers(UserService.getCustomers());
+        UserService.loadCustomersfromFile("src/test/resources/jsonFileCustomer.json");
+
         ArrayList<Flight> check = new ArrayList<>();
         check.addAll(UserService.checkIn(UserService.getCustomers().get(0).getUsername()));
         UserService.getCustomers().get(0).addBoardingCards(5, check);
@@ -85,6 +91,7 @@ public class WriteTests {
         fli[0] = flight5.toString();
 
         custom.get(0).getMyFlights().add(flight5);
+        ab.add(flight5);
         assertEquals(ab, UserService.checkIn(UserService.getCustomers().get(0).getUsername()));
         assertEquals(ab, UserService.getCustomers().get(0).getBoardingCard());
         assertEquals(fli, UserService.getCustomers().get(0).showBoardingCards());

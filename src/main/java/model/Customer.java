@@ -33,8 +33,8 @@ public class Customer extends User {
     public ArrayList<Flight> getBoardingCard()
     {
         return boardingCard;
-    }
-    public void addBoardingCards(int flightNo, ArrayList<Flight> flight_list) {
+    }   //
+    public void addBoardingCards(int flightNo, ArrayList<Flight> flight_list) { //
         Flight a = null;
         for (Flight flight : flight_list) {
             if (flightNo == flight.getFlightNo()) {
@@ -62,7 +62,7 @@ public class Customer extends User {
         return Objects.hash(super.hashCode(), getBoardingCard());
     }
 
-    public String[] showBoardingCards() {
+    public String[] showBoardingCards() {   //
         if(boardingCard.size() == 0){
             return null;
         }
