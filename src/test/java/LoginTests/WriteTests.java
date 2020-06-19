@@ -81,10 +81,13 @@ public class WriteTests {
         ArrayList<Flight> check = new ArrayList<>();
         check.addAll(UserService.checkIn(UserService.getCustomers().get(0).getUsername()));
         UserService.getCustomers().get(0).addBoardingCards(5, check);
+        String[] fli = new String[1];
+        fli[0] = flight5.toString();
 
         custom.get(0).getMyFlights().add(flight5);
         assertEquals(ab, UserService.checkIn(UserService.getCustomers().get(0).getUsername()));
         assertEquals(ab, UserService.getCustomers().get(0).getBoardingCard());
+        assertEquals(fli, UserService.getCustomers().get(0).showBoardingCards());
         UserService.writeCustomers(custo);
     }
 
