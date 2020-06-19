@@ -32,4 +32,14 @@ public class UserServiceTests {
         flights.add(flight6);
         assertEquals(flights, UserService.checkAvailabilityFlight(UserService.getPilots().get(0).getUsername()));
     }
+
+    @Test
+    public void test1() throws IOException {
+        UserService.loadCustomersfromFile("src/test/resources/JsonFileCustomer.json");
+        UserService.loadFlightsFromFile("src/test/resources/JsonFileFlight.json");
+        ArrayList<Flight> flights = new ArrayList<>();
+        Flight flight1 = new Flight(1, "Timisoara", "Londra", "29-05-2020");
+        flights.add(flight1);
+        assertEquals(flights, UserService.checkAvailableFlightsUser(UserService.getCustomers().get(0).getUsername(), "Timisoara", "Londra"));
+    }
 }
