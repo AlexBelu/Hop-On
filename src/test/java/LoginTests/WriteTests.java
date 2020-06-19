@@ -19,7 +19,7 @@ public class WriteTests {
         UserService.loadFlightsFromFile("src/test/resources/jsonFileFlight.json");
     }
     @Test
-    public void test1() throws IOException {
+    public void test1() throws IOException {    //si Customer showFlights()
         ArrayList<Customer> custo = new ArrayList<Customer>();
         ArrayList<Customer> custom = new ArrayList<Customer>();
         custo = SerializationUtils.clone(UserService.getCustomers());
@@ -28,12 +28,17 @@ public class WriteTests {
         UserService.writeCustomers(UserService.getCustomers());
         UserService.loadCustomersfromFile("src/test/resources/jsonFileCustomer.json");
         Flight flight1 = new Flight(1, "Timisoara", "Londra", "29-05-2020");
+
         custom.get(0).getMyFlights().add(flight1);
         assertEquals(custom, UserService.getCustomers());
+
+        String[] fli = new String[1];
+        fli[0] = flight1.toString();
+        assertEquals(fli, UserService.getCustomers().get(0).showFlights());
         UserService.writeCustomers(custo);
     }
    @Test
-   public void test2() throws IOException { //si showFlights()
+   public void test2() throws IOException { //si Pilot showFlights()
        ArrayList<Pilot> custo = new ArrayList<Pilot>();
        ArrayList<Pilot> custom = new ArrayList<Pilot>();
 
@@ -61,8 +66,30 @@ public class WriteTests {
        UserService.writeFlights(custo1);
    }
 
+    @Test
+    public void test3() throws IOException {    //pt User Service checkIn, Customer addBoardingCard, getBoardingCard, showBoardingCards
+        ArrayList<Customer> custo = new ArrayList<Customer>();
+        ArrayList<Customer> custom = new ArrayList<Customer>();
+        custo = SerializationUtils.clone(UserService.getCustomers());
+        custom = SerializationUtils.clone(UserService.getCustomers());
+        UserService.getCustomers().get(0).addFlight(5, UserService.getFlights());
+        UserService.writeCustomers(UserService.getCustomers());
+        UserService.loadCustomersfromFile("src/test/resources/jsonFileCustomer.json");
+        Flight flight5 = new Flight(5, "Timisoara", "Paris", "20-06-2020");
+        ArrayList<Flight> ab = new ArrayList<>();
+        ab.add(flight5);
+        ArrayList<Flight> check = new ArrayList<>();
+        check.addAll(UserService.checkIn(UserService.getCustomers().get(0).getUsername()));
+        UserService.getCustomers().get(0).addBoardingCards(5, check);
+        String[] fli = new String[1];
+        fli[0] = flight5.toString();
 
-
+        custom.get(0).getMyFlights().add(flight5);
+        assertEquals(ab, UserService.checkIn(UserService.getCustomers().get(0).getUsername()));
+        assertEquals(ab, UserService.getCustomers().get(0).getBoardingCard());
+        assertEquals(fli, UserService.getCustomers().get(0).showBoardingCards());
+        UserService.writeCustomers(custo);
+    }
 
 
 }
