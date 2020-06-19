@@ -13,7 +13,7 @@ import java.nio.file.Path;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
-
+//aici cream fisierele pentru test
 public class JsonWriterTest {
     private static final Path PILOTTest_PATH = FileSystemService.getPathToFile("src/test/resources/jsonFilePilot.json");
     private static final Path CUSTOMERTest_PATH = FileSystemService.getPathToFile("src/test/resources/jsonFileCustomer.json");
