@@ -28,6 +28,7 @@ public class WriteTests {
         UserService.writeCustomers(UserService.getCustomers());
         UserService.loadCustomersfromFile("src/test/resources/jsonFileCustomer.json");
         Flight flight1 = new Flight(1, "Timisoara", "Londra", "29-05-2020");
+
         custom.get(0).getMyFlights().add(flight1);
         assertEquals(custom, UserService.getCustomers());
 
@@ -65,8 +66,27 @@ public class WriteTests {
        UserService.writeFlights(custo1);
    }
 
+    @Test
+    public void test3() throws IOException {    //pt User Service checkIn, Customer addBoardingCard, getBoardingCard, showBoardingCards
+        ArrayList<Customer> custo = new ArrayList<Customer>();
+        ArrayList<Customer> custom = new ArrayList<Customer>();
+        custo = SerializationUtils.clone(UserService.getCustomers());
+        custom = SerializationUtils.clone(UserService.getCustomers());
+        UserService.getCustomers().get(0).addFlight(5, UserService.getFlights());
+        UserService.writeCustomers(UserService.getCustomers());
+        UserService.loadCustomersfromFile("src/test/resources/jsonFileCustomer.json");
+        Flight flight5 = new Flight(5, "Timisoara", "Paris", "20-06-2020");
+        ArrayList<Flight> ab = new ArrayList<>();
+        ab.add(flight5);
+        ArrayList<Flight> check = new ArrayList<>();
+        check.addAll(UserService.checkIn(UserService.getCustomers().get(0).getUsername()));
+        UserService.getCustomers().get(0).addBoardingCards(5, check);
 
-
+        custom.get(0).getMyFlights().add(flight5);
+        assertEquals(ab, UserService.checkIn(UserService.getCustomers().get(0).getUsername()));
+        assertEquals(ab, UserService.getCustomers().get(0).getBoardingCard());
+        UserService.writeCustomers(custo);
+    }
 
 
 }

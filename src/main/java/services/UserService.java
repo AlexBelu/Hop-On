@@ -149,7 +149,7 @@ public class UserService {
         return availableFlights;
     }
 
-    public static ArrayList<Flight> checkAvailableFlightsUser(String username, String departure, String arrival) throws IOException {
+    public static ArrayList<Flight> checkAvailableFlightsUser(String username, String departure, String arrival) throws IOException {   //testata in UserServiceTests
         ArrayList<Flight> availableFlights = new ArrayList<>();
         //UserService.loadFlightsFromFile("src/main/resources/jsonFileFlight");
         for (Flight flight : flights) {
@@ -162,7 +162,7 @@ public class UserService {
     }
 
 
-    public static ArrayList<Flight> checkIn(String username) throws IOException {
+    public static ArrayList<Flight> checkIn(String username) throws IOException {   //
         ArrayList<Flight> checkInavailable = new ArrayList<>();
         //UserService.loadFlightsFromFile("src/main/resources/jsonFileFlight");
         Date date = new Date();

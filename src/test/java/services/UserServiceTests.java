@@ -22,7 +22,7 @@ public class UserServiceTests {
         Flight flight2 = new Flight(2, "Timisoara", "Berlin", "20-05-2020");
         Flight flight3 = new Flight(3, "Bucuresti", "Roma", "21-05-2020");
         Flight flight4 = new Flight(4, "Bucuresti", "Paris", "17-06-2020");
-        Flight flight5 = new Flight(5, "Timisoara", "Paris", "15-06-2020");
+        Flight flight5 = new Flight(5, "Timisoara", "Paris", "20-06-2020");
         Flight flight6 = new Flight(6, "Berlin", "Roma", "13-06-2020");
         flights.add(flight1);
         flights.add(flight2);
