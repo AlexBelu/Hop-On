@@ -21,11 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="84d1b675-e47f-46c5-8150-396e1a9d0ad0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/LoginTests/WriteTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginTests/WriteTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/LoginTests/JsonWriterTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/LoginTests/JsonWriterTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/LoginTests/LoadFromFileTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/LoginTests/LoadFromFileTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/jsonFileCustomer.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/jsonFileCustomer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/LoginTests/WriteTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/LoginTests/WriteTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jsonFileFlight.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/jsonFileFlight.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +75,19 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.All in Hop-On">
+    <configuration name="JsonWriterTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LoginTests.JsonWriterTest" />
+      <module name="Hop-On" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LoginTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="All in Hop-On" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Hop-On" />
       <option name="PACKAGE_NAME" value="" />
@@ -98,45 +110,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WriteTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Hop-On" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="services.*" />
+          <option name="PATTERN" value="LoginTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="services" />
-      <option name="MAIN_CLASS_NAME" value="services.UserServiceTests" />
+      <option name="PACKAGE_NAME" value="LoginTests" />
+      <option name="MAIN_CLASS_NAME" value="LoginTests.WriteTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="model in Hop-On" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WriteTests.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Hop-On" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="model.*" />
+          <option name="PATTERN" value="LoginTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="services in Hop-On" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Hop-On" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="services" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="PACKAGE_NAME" value="LoginTests" />
+      <option name="MAIN_CLASS_NAME" value="LoginTests.WriteTests" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -144,10 +144,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in Hop-On" />
+        <item itemvalue="JUnit.WriteTests" />
+        <item itemvalue="Application.JsonWriterTest" />
+        <item itemvalue="JUnit.WriteTests.test3" />
         <item itemvalue="JUnit.LoginTests in Hop-On" />
-        <item itemvalue="JUnit.model in Hop-On" />
-        <item itemvalue="JUnit.UserServiceTests" />
-        <item itemvalue="JUnit.services in Hop-On" />
       </list>
     </recent_temporary>
   </component>
@@ -303,7 +303,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592576913128</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="[HO-46] [UT] As a customer, I want to be able to see my boarding cards.">
+      <created>1592577109103</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1592577109103</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -337,7 +344,8 @@
     <MESSAGE value="[HO-43] [UT] Create a method which shows the flights that need a pilot." />
     <MESSAGE value="[HO-44] [UT] Create a method which allows the customer to search a flight." />
     <MESSAGE value="[HO-45] [UT] As a customer, I want to be able to do the check-in online." />
-    <option name="LAST_COMMIT_MESSAGE" value="[HO-45] [UT] As a customer, I want to be able to do the check-in online." />
+    <MESSAGE value="[HO-46] [UT] As a customer, I want to be able to see my boarding cards." />
+    <option name="LAST_COMMIT_MESSAGE" value="[HO-46] [UT] As a customer, I want to be able to see my boarding cards." />
   </component>
   <component name="WindowStateProjectService">
     <state x="280" y="0" key="#Project_Structure" timestamp="1590598513576">
@@ -367,10 +375,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="516" y="259" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1588336546893" />
-    <state x="269" y="0" key="CommitChangelistDialog2" timestamp="1592576911600">
+    <state x="269" y="0" key="CommitChangelistDialog2" timestamp="1592577108009">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="269" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1592576911600" />
+    <state x="269" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1592577108009" />
     <state x="323" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1591294429452" />
     <state x="121" y="50" key="DiffContextDialog" timestamp="1587657233417">
       <screen x="0" y="0" width="1280" height="680" />
@@ -380,25 +388,25 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1587809068131" />
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1592577058279">
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1592583259197">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1592577058279" />
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1592583259197" />
     <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590681955691" />
-    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1592577058279">
+    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1592583259196">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1592577058279" />
+    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1592583259196" />
     <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1590681955691" />
-    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1592577058279">
+    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1592583259196">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1592577058279" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1592583259196" />
     <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1590681955691" />
-    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1592577058279">
+    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1592583259197">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1592577058279" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1592583259197" />
     <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1590681955691" />
     <state width="1237" height="204" key="GridCell.Tab.1.bottom" timestamp="1592574811151">
       <screen x="0" y="0" width="1280" height="680" />
@@ -433,10 +441,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="490" y="255" key="VCS.ChangelistChooser/0.0.1280.680@0.0.1280.680" timestamp="1592569309599" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1592569428328">
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1592577121258">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1592569428328" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1592577121258" />
     <state x="280" y="90" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1589535471755" />
     <state x="375" y="234" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1587808933297">
       <screen x="0" y="0" width="1280" height="680" />
