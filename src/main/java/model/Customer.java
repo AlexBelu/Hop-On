@@ -19,7 +19,7 @@ public class Customer extends User {
     }
     public Customer(){}
 
-    public void addFlight(int flightNo, ArrayList<Flight> flight_list) {
+    public void addFlight(int flightNo, ArrayList<Flight> flight_list) { //
         Flight a = null;
         for (Flight flight : flight_list) {
             if (flightNo == flight.getFlightNo()) {

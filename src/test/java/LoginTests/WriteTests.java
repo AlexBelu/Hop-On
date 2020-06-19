@@ -33,7 +33,7 @@ public class WriteTests {
         UserService.writeCustomers(custo);
     }
    @Test
-   public void test2() throws IOException {
+   public void test2() throws IOException { //si showFlights()
        ArrayList<Pilot> custo = new ArrayList<Pilot>();
        ArrayList<Pilot> custom = new ArrayList<Pilot>();
 
@@ -53,6 +53,10 @@ public class WriteTests {
        custom.get(0).getMyFlights().add(flight1);
        assertEquals(custom, UserService.getPilots());
        assertEquals(flight1,UserService.getFlight(1));
+
+       String[] fli = new String[1];
+       fli[0] = flight1.toString();
+       assertEquals(fli, UserService.getPilots().get(0).showFlights());
        UserService.writePilots(custo);
        UserService.writeFlights(custo1);
    }
