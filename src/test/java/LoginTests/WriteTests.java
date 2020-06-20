@@ -43,14 +43,10 @@ public class WriteTests {
    public void test2() throws IOException { //si Pilot showFlights()
        ArrayList<Pilot> custo = new ArrayList<Pilot>();
        ArrayList<Pilot> custom = new ArrayList<Pilot>();
-
        ArrayList<Flight> custo1 = new ArrayList<Flight>();
-       ArrayList<Flight> custom1 = new ArrayList<Flight>();
        custo = SerializationUtils.clone(UserService.getPilots());
        custom = SerializationUtils.clone(UserService.getPilots());
-
        custo1 = SerializationUtils.clone(UserService.getFlights());
-       custom1 = SerializationUtils.clone(UserService.getFlights());
        UserService.getPilots().get(0).addFlight(1, UserService.getFlights());
        UserService.writePilots(UserService.getPilots());
        UserService.writeFlights(UserService.getFlights());
