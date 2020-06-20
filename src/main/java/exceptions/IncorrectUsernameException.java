@@ -8,7 +8,5 @@ public class IncorrectUsernameException extends Exception{
         this.username=username;
     }
 
-    public String getUsername() {
-        return username;
-    }
+
 }

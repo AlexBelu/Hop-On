@@ -17,10 +17,8 @@ public class LoginController {
             UserService.loginTry(username, password);
             return true;
         } catch (IncorrectPasswordException e) {
-            System.out.println("Incorrect Password");
             return false;
         } catch (IncorrectUsernameException e) {
-            System.out.println("Incorrect Username");
             return false;
 
         }

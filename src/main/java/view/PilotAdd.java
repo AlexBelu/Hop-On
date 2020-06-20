@@ -22,11 +22,7 @@ import static org.apache.commons.lang3.StringUtils.isNumeric;
 public class PilotAdd extends JFrame {
     private JButton back;
     private JButton view;
-    public static void main(String[] args) throws IOException {
-        PilotAdd frameTabel = new PilotAdd();
-        frameTabel.setVisible(true);
 
-    }
     List<String> selectedValuesList;
 
 

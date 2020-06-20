@@ -17,10 +17,7 @@ import static org.apache.commons.lang3.StringUtils.isNumeric;
 public class CustomerAddFlight extends JFrame {
     private JButton back;
     private JButton view;
-    public static void main(String[] args) throws IOException {
-        CustomerAddFlight frameTabel = new CustomerAddFlight();
-        frameTabel.setVisible(true);
-    }
+
 
     List<String> selectedValuesList;
 

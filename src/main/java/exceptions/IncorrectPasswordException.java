@@ -8,7 +8,5 @@ public class IncorrectPasswordException extends Exception{
                 this.password=password;
             }
 
-    public String getPassword() {
-        return password;
-    }
+
 }

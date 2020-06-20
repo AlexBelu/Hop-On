@@ -62,15 +62,16 @@ public class UserService {
         });
       }catch (FileNotFoundException a) {
           System.out.println("Nu exista fisierul pt zbor");
+
       }
 
     }
     public static void copy() throws IOException {
-       if(!Files.exists((UserService.getPathCustomer())))
+
            FileUtils.copyURLToFile(UserService.class.getClassLoader().getResource("jsonFileCustomer.json"), UserService.getPathCustomer().toFile());
-       if(!Files.exists((UserService.getFlightPath())))
+
         FileUtils.copyURLToFile(UserService.class.getClassLoader().getResource("jsonFileFlight.json"), UserService.getFlightPath().toFile());
-        if(!Files.exists((UserService.getPathPilot())))
+
         FileUtils.copyURLToFile(UserService.class.getClassLoader().getResource("jsonFilePilot.json"), UserService.getPathPilot().toFile());
     }
 
@@ -231,16 +232,4 @@ public class UserService {
     }
     }
 
-
-
-    public static void main(String[] argv) throws IOException {
-       loadCustomersfromFile("src/main/resources/da");
-        loadPilotsfromFile("src/main/resources/nu");
-       loadFlightsFromFile("src/main/resources/jsonFileFlight.json");
-       System.out.println(CUSTOMERS_PATH);
-       System.out.println(customers);
-
-
-
-    }
 }

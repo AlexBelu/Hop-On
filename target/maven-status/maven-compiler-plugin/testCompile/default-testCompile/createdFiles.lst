@@ -1,4 +1,6 @@
 LoginTests\JsonWriterTest.class
-LoginTests\WriteTests.class
+services\UserServiceTest.class
+LoginTests\WriteTest.class
 LoginTests\LoginTest.class
 LoginTests\LoadFromFileTest.class
+LoginTests\FileSystemServiceTest.class

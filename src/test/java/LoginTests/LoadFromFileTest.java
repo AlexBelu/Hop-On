@@ -70,4 +70,19 @@ public class LoadFromFileTest{
         UserService.loadPilotsfromFile("src/test/resources/nimic.json");
 
     }
+    @Test
+    public void test6() throws  IOException{
+            UserService.loadCustomersfromFile("nu avem path");
+    }
+    @Test
+    public void test7() throws  IOException{
+        UserService.loadPilotsfromFile("nu avem path");
+    }
+    @Test
+    public void test8() throws  IOException{
+        UserService.loadFlightsFromFile("nu avem path");
+    }
+
+
+
 }

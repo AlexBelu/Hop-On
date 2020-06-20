@@ -96,9 +96,6 @@ public class Check_inView extends JFrame {
         }
 
     }
-    public static void main(String[] args) {
-        CustomerAdd frameTabel = new CustomerAdd();
-        frameTabel.setVisible(true);
-    }
+
 
 }

@@ -63,9 +63,6 @@ public class PilotView extends JFrame {
 
 
     }
-    public static void main(String[] args) {
-        PilotView frameTabel = new PilotView();
-           frameTabel.setVisible(true);
-    }
+
 
 }
