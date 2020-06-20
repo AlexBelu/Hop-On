@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>PilotAdd.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Hop-On</a> &gt; <a href="index.source.html" class="el_package">view</a> &gt; <span class="el_source">PilotAdd.java</span></div><h1>PilotAdd.java</h1><pre class="source lang-java linenums">package view;
+import controller.LoginController;
+import model.Pilot;
+import services.UserService;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.IOException;
+import java.util.List;
+import javax.swing.DefaultListModel;
+import javax.swing.JFrame;
+import javax.swing.JList;
+import javax.swing.JScrollPane;
+import javax.swing.SwingUtilities;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
+import javax.swing.text.AttributeSet;
+
+import static org.apache.commons.lang3.StringUtils.isNumeric;
+
+public class PilotAdd extends JFrame {
+    private JButton back;
+    private JButton view;
+
+    List&lt;String&gt; selectedValuesList;
+
+
+    PilotAdd() throws IOException {
+
+<span class="nc" id="L31">        super(&quot;Add Flights&quot;);</span>
+
+<span class="nc" id="L33">       JLabel welcome = new JLabel(&quot;Welcome to the 'Add Flights' Page&quot;);</span>
+<span class="nc" id="L34">        setSize(500,250);</span>
+<span class="nc" id="L35">        setLocation(500,280);</span>
+<span class="nc" id="L36">        welcome.setBounds(50,10,200,60);</span>
+<span class="nc" id="L37">        JPanel panel=new JPanel();</span>
+<span class="nc" id="L38">        panel.add(welcome);</span>
+<span class="nc" id="L39">        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);</span>
+<span class="nc" id="L40">        String[] b = UserService.listToArray(UserService.checkAvailabilityFlight(LoginView.getTxtUsername()));</span>
+<span class="nc bnc" id="L41" title="All 2 branches missed.">        if (b != null) {</span>
+<span class="nc" id="L42">            JList a = new JList(b);</span>
+<span class="nc" id="L43">            a.setBounds(50, 100, 200, 60);</span>
+<span class="nc" id="L44">            a.addListSelectionListener(new ListSelectionListener() {</span>
+                @Override
+                public void valueChanged(ListSelectionEvent e) {
+<span class="nc bnc" id="L47" title="All 2 branches missed.">                    if (!e.getValueIsAdjusting()) {</span>
+<span class="nc" id="L48">                        selectedValuesList = a.getSelectedValuesList();</span>
+<span class="nc" id="L49">                        System.out.println(selectedValuesList);</span>
+                    }
+<span class="nc" id="L51">                }</span>
+            });
+<span class="nc" id="L53">            JButton select=new JButton(&quot;Select flight&quot;);</span>
+<span class="nc" id="L54">            select.addActionListener(new ActionListener() {</span>
+                public void actionPerformed(ActionEvent actionEvent) {
+<span class="nc" id="L56">                    try {int a=0;</span>
+<span class="nc" id="L57">                         int i=9;</span>
+<span class="nc bnc" id="L58" title="All 2 branches missed.">                         while(isNumeric(String.valueOf(selectedValuesList.get(selectedValuesList.size()-1).charAt(i)))) {</span>
+<span class="nc" id="L59">                             a=a*10+Character.getNumericValue(selectedValuesList.get(selectedValuesList.size()-1).charAt(i));</span>
+<span class="nc" id="L60">                             i++;</span>
+                         }
+
+
+<span class="nc bnc" id="L64" title="All 4 branches missed.">                          if(LoginView.getTxtUsername().equals(UserService.getFlight(a).getUsernamePilot1())||LoginView.getTxtUsername().equals(UserService.getFlight(a).getUsernamePilot2()))</span>
+<span class="nc" id="L65">                              JOptionPane.showMessageDialog(null, &quot;You have already added&quot;, &quot;Adding flight&quot;, JOptionPane.ERROR_MESSAGE);</span>
+                          else
+<span class="nc" id="L67">                              (UserService.findPilot(LoginView.getTxtUsername())).addFlight(a, UserService.checkAvailabilityFlight(LoginView.getTxtUsername()));</span>
+
+<span class="nc" id="L69">                    } catch (IOException e) {</span>
+<span class="nc" id="L70">                        e.printStackTrace();</span>
+<span class="nc" id="L71">                    }</span>
+
+<span class="nc" id="L73">                }});</span>
+<span class="nc" id="L74">            back=new JButton(&quot;Go Back&quot;);</span>
+<span class="nc" id="L75">            back.addActionListener(new ActionListener() {</span>
+                public void actionPerformed(ActionEvent actionEvent) {
+<span class="nc" id="L77">                    PilotView regFace = null;</span>
+<span class="nc" id="L78">                    regFace = new PilotView();</span>
+<span class="nc" id="L79">                    regFace.setVisible(true);</span>
+<span class="nc" id="L80">                    dispose();</span>
+<span class="nc" id="L81">                }</span>
+            });
+<span class="nc" id="L83">            back.setBounds(50, 100, 200, 80);</span>
+<span class="nc" id="L84">            panel.add(back);</span>
+<span class="nc" id="L85">            view= new JButton(&quot;View Flights&quot;);</span>
+<span class="nc" id="L86">            view.addActionListener(new ActionListener() {</span>
+                public void actionPerformed(ActionEvent actionEvent) {
+<span class="nc" id="L88">                    PilotViewFlights regFace = null;</span>
+<span class="nc" id="L89">                    regFace = new PilotViewFlights();</span>
+<span class="nc" id="L90">                    regFace.setVisible(true);</span>
+<span class="nc" id="L91">                    dispose();</span>
+<span class="nc" id="L92">                }</span>
+            });
+<span class="nc" id="L94">            view.setBounds(50, 100, 200, 80);</span>
+<span class="nc" id="L95">            panel.add(view);</span>
+<span class="nc" id="L96">            panel.add(select);</span>
+<span class="nc" id="L97">            panel.add(a);</span>
+<span class="nc" id="L98">            add(new JScrollPane(panel),BorderLayout.CENTER);</span>
+
+
+<span class="nc" id="L101">        } else {</span>
+<span class="nc" id="L102">            JLabel er = new JLabel(&quot;You do not have any flights&quot;);</span>
+<span class="nc" id="L103">            er.setBounds(180, 200, 250, 100);</span>
+<span class="nc" id="L104">          panel.add(er);</span>
+        }
+
+
+<span class="nc" id="L108">    }</span>
+
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

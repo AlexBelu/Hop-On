@@ -57,10 +57,6 @@ public class Customer extends User {
         return Objects.equals(getBoardingCard(), customer.getBoardingCard());
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(super.hashCode(), getBoardingCard());
-    }
 
     public String[] showBoardingCards() {   //
         if(boardingCard.size() == 0){

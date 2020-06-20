@@ -47,4 +47,9 @@ public class LoginTest {
         assertEquals("pilot",UserService.getLoginRole());
 
     }
+    @Test(expected = IncorrectPasswordException.class)
+    public void test7() throws IncorrectPasswordException, IncorrectUsernameException {
+        UserService.loginTry("Fodor Razvan", "loti2");
+
+    }
 }

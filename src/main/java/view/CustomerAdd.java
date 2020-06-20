@@ -83,9 +83,6 @@ public class CustomerAdd extends JFrame {
         return txtArrival.getText();
     }
 
-    public static void main(String[] args) {
-        CustomerAdd frameTabel = new CustomerAdd();
-        frameTabel.setVisible(true);
-    }
+
 
 }

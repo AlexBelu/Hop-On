@@ -10,10 +10,6 @@ import java.io.IOException;
 
 public class PilotViewFlights  extends JFrame {
      private JButton back ;
-    public static void main(String[] args) throws IOException {
-        PilotAdd frameTabel = new PilotAdd();
-        frameTabel.setVisible(true);
-    }
 
 
     PilotViewFlights() {

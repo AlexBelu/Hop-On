@@ -45,9 +45,6 @@ public class BoardingTable extends JFrame {
             panel.add(er);
         }
     }
-    public static void main(String[] args) {
-        BoardingTable frameTabel = new BoardingTable();
-        frameTabel.setVisible(true);
-    }
+
 
 }

@@ -4,7 +4,10 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import model.Customer;
 import model.Flight;
 import model.Pilot;
+import org.junit.Test;
 import services.FileSystemService;
+import services.JSONWriter;
+import services.JSONWriterFlights;
 import services.UserService;
 
 import java.io.IOException;
@@ -38,6 +41,20 @@ public class JsonWriterTest {
             throw new IllegalStateException("SHA-512 does not exist!");
         }
         return md;
+    }
+       @Test
+        public void test()
+       {
+           JSONWriter a= new JSONWriter();
+           String[] b=new String[1];
+           a.main(b);
+       }
+    @Test
+    public void test1()
+    {
+        JSONWriterFlights a= new JSONWriterFlights();
+        String[] b=new String[1];
+        a.main(b);
     }
 
     public static void main(String[] args){

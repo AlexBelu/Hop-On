@@ -59,10 +59,7 @@ abstract public class User implements Serializable {
 
 
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(getUsername(), getPassword(), getRole());
-    }
+
 
     @Override
     public String toString() {

@@ -85,10 +85,7 @@ public class CustomerView extends JFrame {
             back.setBounds(175, 310, 120, 40);
             contentPane.add(back);
         }
-        public static void main(String[] args) {
-            CustomerView frameTabel = new CustomerView();
-            frameTabel.setVisible(true);
-        }
+
 
 
     }

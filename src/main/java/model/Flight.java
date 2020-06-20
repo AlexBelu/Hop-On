@@ -76,10 +76,6 @@ public class Flight implements Serializable {
                 Objects.equals(getUsernamePilot2(), flight.getUsernamePilot2());
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(getFlightNo(), getDeparture(), getArrival(), getDate(), getUsernamePilot1(), getUsernamePilot2(), getNoPilots());
-    }
 
     public void setUsernamePilot1(String usernamePilot1) {  //
         this.usernamePilot1 = usernamePilot1;
@@ -104,7 +100,7 @@ public class Flight implements Serializable {
                 "flightNo=" + flightNo +
                 ", departure='" + departure + '\'' +
                 ", arrival='" + arrival + '\'' +
-                ", date='" + date + '\''+"pilot:" + usernamePilot1 ;
+                ", date='" + date + '\''+"pilot:" + usernamePilot1+" pilot:"+usernamePilot2;
 
 
     }
