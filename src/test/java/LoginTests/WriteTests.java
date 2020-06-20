@@ -43,14 +43,10 @@ public class WriteTests {
    public void test2() throws IOException { //si Pilot showFlights()
        ArrayList<Pilot> custo = new ArrayList<Pilot>();
        ArrayList<Pilot> custom = new ArrayList<Pilot>();
-
        ArrayList<Flight> custo1 = new ArrayList<Flight>();
-       ArrayList<Flight> custom1 = new ArrayList<Flight>();
        custo = SerializationUtils.clone(UserService.getPilots());
        custom = SerializationUtils.clone(UserService.getPilots());
-
        custo1 = SerializationUtils.clone(UserService.getFlights());
-       custom1 = SerializationUtils.clone(UserService.getFlights());
        UserService.getPilots().get(0).addFlight(1, UserService.getFlights());
        UserService.writePilots(UserService.getPilots());
        UserService.writeFlights(UserService.getFlights());
@@ -60,7 +56,6 @@ public class WriteTests {
        custom.get(0).getMyFlights().add(flight1);
        assertEquals(custom, UserService.getPilots());
        assertEquals(flight1,UserService.getFlight(1));
-
        String[] fli = new String[1];
        fli[0] = flight1.toString();
        assertEquals(fli, UserService.getPilots().get(0).showFlights());
@@ -69,7 +64,7 @@ public class WriteTests {
    }
 
     @Test
-    public void test3() throws IOException {    //pt User Service checkIn, Customer addBoardingCard, getBoardingCard, showBoardingCards
+    public void test3() throws IOException {     //pt User Service checkIn, Customer addBoardingCard, getBoardingCard, showBoardingCards
         ArrayList<Customer> custo = new ArrayList<Customer>();
         ArrayList<Customer> custom = new ArrayList<Customer>();
         custo = SerializationUtils.clone(UserService.getCustomers());
@@ -83,13 +78,11 @@ public class WriteTests {
         UserService.getCustomers().get(0).addFlight(5, ab);
         UserService.writeCustomers(UserService.getCustomers());
         UserService.loadCustomersfromFile("src/test/resources/jsonFileCustomer.json");
-
         ArrayList<Flight> check = new ArrayList<>();
         check.addAll(UserService.checkIn(UserService.getCustomers().get(0).getUsername()));
         UserService.getCustomers().get(0).addBoardingCards(5, check);
         String[] fli = new String[1];
         fli[0] = flight5.toString();
-
         custom.get(0).getMyFlights().add(flight5);
         ab.add(flight5);
         assertEquals(ab, UserService.checkIn(UserService.getCustomers().get(0).getUsername()));

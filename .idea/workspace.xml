@@ -19,43 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84d1b675-e47f-46c5-8150-396e1a9d0ad0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/BoardingTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/BoardingTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/Check_inView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Check_inView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/CustomerAdd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/CustomerAdd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/CustomerAddFlight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/CustomerAddFlight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/CustomerView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/CustomerView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/CustomerViewFlights.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/CustomerViewFlights.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/PilotAdd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/PilotAdd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/PilotView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/PilotView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/PilotViewFlights.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/PilotViewFlights.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jsonFileCustomer.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jsonFileCustomer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jsonFileFlight.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jsonFileFlight.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jsonFilePilot.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jsonFilePilot.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/BoardingTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/BoardingTable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/Check_inView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/Check_inView$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/Check_inView$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/Check_inView$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/Check_inView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/Check_inView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/CustomerAdd$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/CustomerAdd$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/CustomerAdd.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/CustomerAdd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/CustomerAddFlight$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/CustomerAddFlight$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/CustomerAddFlight$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/CustomerAddFlight$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/CustomerAddFlight.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/CustomerAddFlight.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/CustomerView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/CustomerView$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/CustomerView$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/CustomerView$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/CustomerView$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/CustomerView$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/CustomerView$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/CustomerView$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/CustomerView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/CustomerView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/CustomerViewFlights.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/CustomerViewFlights.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/PilotAdd$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/PilotAdd$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/PilotAdd$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/PilotAdd$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/PilotAdd.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/PilotAdd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/PilotView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/PilotView$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/PilotView$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/PilotView$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/PilotView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/PilotView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/PilotViewFlights.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/PilotViewFlights.class" afterDir="false" />
-    </list>
+    <list default="true" id="84d1b675-e47f-46c5-8150-396e1a9d0ad0" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,59 +68,7 @@
       <recent name="D:\POO\Hop-On\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JSONWriterFlights">
-    <configuration name="JSONWriter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="services.JSONWriter" />
-      <module name="Hop-On" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JSONWriterFlights" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="services.JSONWriterFlights" />
-      <module name="Hop-On" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="view.LoginView" />
-      <module name="Hop-On" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="view.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PilotViewFlights" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="view.PilotViewFlights" />
-      <module name="Hop-On" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="view.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.WriteTests">
     <configuration name="All in Hop-On" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Hop-On" />
       <option name="PACKAGE_NAME" value="" />
@@ -165,13 +77,76 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FlightTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Hop-On" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.FlightTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTests.testPasswordEncoding" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Hop-On" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="services" />
+      <option name="MAIN_CLASS_NAME" value="services.UserServiceTests" />
+      <option name="METHOD_NAME" value="testPasswordEncoding" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Hop-On" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.UserTest" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WriteTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Hop-On" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LoginTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="LoginTests" />
+      <option name="MAIN_CLASS_NAME" value="LoginTests.WriteTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JSONWriterFlights" />
-        <item itemvalue="Application.JSONWriter" />
-        <item itemvalue="Application.LoginView" />
-        <item itemvalue="Application.PilotViewFlights" />
+        <item itemvalue="JUnit.WriteTests" />
         <item itemvalue="JUnit.All in Hop-On" />
+        <item itemvalue="JUnit.UserServiceTests.testPasswordEncoding" />
+        <item itemvalue="JUnit.FlightTest.test" />
+        <item itemvalue="JUnit.UserTest.test3" />
       </list>
     </recent_temporary>
   </component>
@@ -340,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592583635784</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="[HO-47] [UT] Create a method which add the selected flight.">
+      <created>1592650857500</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1592650857500</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -377,7 +359,8 @@
     <MESSAGE value="[HO-45] [UT] As a customer, I want to be able to do the check-in online." />
     <MESSAGE value="[HO-46] [UT] As a customer, I want to be able to see my boarding cards." />
     <MESSAGE value="[HO-46] [UT] As a customer, I want to be able to see my boarding cards. - UPDATE" />
-    <option name="LAST_COMMIT_MESSAGE" value="[HO-46] [UT] As a customer, I want to be able to see my boarding cards. - UPDATE" />
+    <MESSAGE value="[HO-47] [UT] Create a method which add the selected flight." />
+    <option name="LAST_COMMIT_MESSAGE" value="[HO-47] [UT] Create a method which add the selected flight." />
   </component>
   <component name="WindowStateProjectService">
     <state x="280" y="0" key="#Project_Structure" timestamp="1590598513576">
@@ -395,10 +378,10 @@
     </state>
     <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1592590356120" />
     <state x="535" y="30" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1588530884832" />
-    <state x="566" y="271" width="433" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1592654341422">
+    <state x="566" y="271" width="403" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1590587186413">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="566" y="271" width="433" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1592654341422" />
+    <state x="566" y="271" width="403" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1590587186413" />
     <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590321384653">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -407,11 +390,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="516" y="259" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1588336546893" />
-    <state x="269" y="0" key="CommitChangelistDialog2" timestamp="1592583633959">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="323" y="0" key="CommitChangelistDialog2" timestamp="1592650853401">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="269" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1592583633959" />
-    <state x="323" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1591294429452" />
+    <state x="323" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1592650853401" />
     <state x="121" y="50" key="DiffContextDialog" timestamp="1587657233417">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -420,26 +403,26 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1587809068131" />
-    <state width="746" height="233" key="GridCell.Tab.0.bottom" timestamp="1592654500133">
+    <state width="1493" height="233" key="GridCell.Tab.0.bottom" timestamp="1592650775053">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1237" height="204" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1592591929491" />
-    <state width="746" height="233" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592654500133" />
-    <state width="746" height="233" key="GridCell.Tab.0.center" timestamp="1592654500131">
+    <state width="1493" height="233" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592650775053" />
+    <state width="1493" height="233" key="GridCell.Tab.0.center" timestamp="1592650775053">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1237" height="204" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1592591929491" />
-    <state width="746" height="233" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592654500131" />
-    <state width="746" height="233" key="GridCell.Tab.0.left" timestamp="1592654500131">
+    <state width="1493" height="233" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592650775053" />
+    <state width="1493" height="233" key="GridCell.Tab.0.left" timestamp="1592650775053">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1237" height="204" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1592591929491" />
-    <state width="746" height="233" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592654500131" />
-    <state width="746" height="233" key="GridCell.Tab.0.right" timestamp="1592654500132">
+    <state width="1493" height="233" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592650775053" />
+    <state width="1493" height="233" key="GridCell.Tab.0.right" timestamp="1592650775053">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1237" height="204" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1592591929491" />
-    <state width="746" height="233" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592654500132" />
+    <state width="1493" height="233" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592650775053" />
     <state width="1237" height="204" key="GridCell.Tab.1.bottom" timestamp="1592591929498">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -460,11 +443,11 @@
     </state>
     <state width="1237" height="204" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1592591929491" />
     <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1589362087794" />
-    <state x="412" y="134" key="Maven.ArtifactSearchDialog" timestamp="1587981835162">
+    <state x="412" y="134" key="Maven.ArtifactSearchDialog" timestamp="1592650513005">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="171" y="0" key="Maven.ArtifactSearchDialog/0.0.1280.680@0.0.1280.680" timestamp="1587979702596" />
-    <state x="412" y="134" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1587981835162" />
+    <state x="412" y="134" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1592650513005" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1587824520161">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -473,11 +456,11 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="490" y="255" key="VCS.ChangelistChooser/0.0.1280.680@0.0.1280.680" timestamp="1592569309599" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1592583645149">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="280" y="90" key="Vcs.Push.Dialog.v2" timestamp="1592650865998">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1592583645149" />
-    <state x="280" y="90" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1589535471755" />
+    <state x="280" y="90" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1592650865998" />
     <state x="375" y="234" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1587808933297">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -499,8 +482,5 @@
     </state>
     <state x="359" y="120" width="672" height="560" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1589735485643" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1590592459059" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Hop_On$All_in_Hop_On.ic" NAME="All in Hop-On Coverage Results" MODIFIED="1592652095461" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
