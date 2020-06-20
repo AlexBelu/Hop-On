@@ -63,7 +63,7 @@ public class LoginView extends JFrame {
                         dispose();
                     }
                 } else {
-                    JOptionPane.showMessageDialog(null, "Invalid credentials", "Adding user", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(null, "Invalid credentials", "Login try", JOptionPane.ERROR_MESSAGE);
                 }
             }
         });
