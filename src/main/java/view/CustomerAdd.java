@@ -8,6 +8,7 @@ import java.awt.event.ActionListener;
 import java.io.IOException;
 
 public class CustomerAdd extends JFrame {
+    private JButton back;
     private static JTextField txtDeparture;
     private static JTextField txtArrival;
 
@@ -58,6 +59,18 @@ public class CustomerAdd extends JFrame {
                 }
             }
         });
+        back= new JButton("Go Back");
+        back.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent actionEvent) {
+               CustomerView regFace = null;
+                regFace = new CustomerView();
+                regFace.setVisible(true);
+                dispose();
+            }
+        });
+        back.setBounds(175, 169, 100, 40);
+        contentPane.add(back);
+
         search.setBounds(175, 110, 100, 40);
         contentPane.add(search);
     }

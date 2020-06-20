@@ -14,6 +14,8 @@ import java.util.List;
 import static org.apache.commons.lang3.StringUtils.isNumeric;
 
 public class Check_inView extends JFrame {
+    private JButton back;
+    private JButton boarding= new JButton("Boarding Cards");
     List<String> selectedValuesList;
     Check_inView() throws IOException {
         super("Check-in");
@@ -25,6 +27,27 @@ public class Check_inView extends JFrame {
         panel.add(welcome);
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        back= new JButton("Go Back");
+        back.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent actionEvent) {
+                CustomerView regFace = null;
+                regFace = new CustomerView();
+                regFace.setVisible(true);
+                dispose();
+            }
+        });
+        back.setBounds(50, 100, 200, 80);
+        panel.add(back);
+        boarding.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent actionEvent) {
+                BoardingTable regFace = null;
+                regFace = new BoardingTable();
+                regFace.setVisible(true);
+                dispose();
+            }
+        });
+        boarding.setBounds(50, 100, 200, 100);
+        panel.add(boarding);
         String[] b = UserService.listToArray(UserService.checkIn(LoginView.getTxtUsername()));
         System.out.println(b);
         if (b != null) {

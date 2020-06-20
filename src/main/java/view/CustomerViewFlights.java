@@ -4,8 +4,11 @@ import services.UserService;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class CustomerViewFlights extends JFrame {
+    private JButton back ;
     CustomerViewFlights(){
         super("View Flights");
         JLabel welcome = new JLabel("Welcome to the 'Show Flights' Page");
@@ -16,6 +19,17 @@ public class CustomerViewFlights extends JFrame {
         panel.add(welcome);
         getContentPane().add(panel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        back= new JButton("Go Back");
+        back.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent actionEvent) {
+                CustomerView regFace = null;
+                regFace = new CustomerView();
+                regFace.setVisible(true);
+                dispose();
+            }
+        });
+        back.setBounds(50, 100, 200, 80);
+        panel.add(back);
 
         String[] b = UserService.findCustomer(LoginView.getTxtUsername()).showFlights();
 

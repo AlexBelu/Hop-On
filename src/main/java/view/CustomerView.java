@@ -12,6 +12,7 @@ public class CustomerView extends JFrame {
         private JButton show;
         private JButton checkin;
         private JButton boarding;
+        private JButton back;
 
 
 
@@ -72,6 +73,17 @@ public class CustomerView extends JFrame {
             });
             boarding.setBounds(175, 260, 120, 40);
             contentPane.add(boarding);
+            back=new JButton("Go Back");
+            back.addActionListener(new ActionListener() {
+                public void actionPerformed(ActionEvent actionEvent) {
+                    LoginView regFace = null;
+                    regFace = new LoginView();
+                    regFace.setVisible(true);
+                    dispose();
+                }
+            });
+            back.setBounds(175, 310, 120, 40);
+            contentPane.add(back);
         }
         public static void main(String[] args) {
             CustomerView frameTabel = new CustomerView();
