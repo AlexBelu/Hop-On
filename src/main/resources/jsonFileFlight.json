@@ -2,7 +2,7 @@
   "flightNo" : 1,
   "departure" : "Timisoara",
   "arrival" : "Londra",
-  "date" : "29-05-2020",
+  "date" : "29-06-2020",
   "usernamePilot1" : null,
   "usernamePilot2" : null,
   "noPilots" : 0
@@ -10,7 +10,7 @@
   "flightNo" : 2,
   "departure" : "Timisoara",
   "arrival" : "Berlin",
-  "date" : "20-05-2020",
+  "date" : "25-06-2020",
   "usernamePilot1" : null,
   "usernamePilot2" : null,
   "noPilots" : 0
@@ -18,7 +18,7 @@
   "flightNo" : 3,
   "departure" : "Bucuresti",
   "arrival" : "Roma",
-  "date" : "21-05-2020",
+  "date" : "26-06-2020",
   "usernamePilot1" : null,
   "usernamePilot2" : null,
   "noPilots" : 0
@@ -26,7 +26,7 @@
   "flightNo" : 4,
   "departure" : "Bucuresti",
   "arrival" : "Paris",
-  "date" : "17-06-2020",
+  "date" : "17-07-2020",
   "usernamePilot1" : null,
   "usernamePilot2" : null,
   "noPilots" : 0
@@ -34,7 +34,7 @@
   "flightNo" : 5,
   "departure" : "Timisoara",
   "arrival" : "Paris",
-  "date" : "15-06-2020",
+  "date" : "15-07-2020",
   "usernamePilot1" : null,
   "usernamePilot2" : null,
   "noPilots" : 0
@@ -42,7 +42,7 @@
   "flightNo" : 6,
   "departure" : "Berlin",
   "arrival" : "Roma",
-  "date" : "13-06-2020",
+  "date" : "27-06-2020",
   "usernamePilot1" : null,
   "usernamePilot2" : null,
   "noPilots" : 0
@@ -50,7 +50,7 @@
   "flightNo" : 7,
   "departure" : "Londra",
   "arrival" : "Timisoara",
-  "date" : "02-06-2020",
+  "date" : "13-07-2020",
   "usernamePilot1" : null,
   "usernamePilot2" : null,
   "noPilots" : 0
@@ -58,7 +58,7 @@
   "flightNo" : 8,
   "departure" : "Cluj-Napoca",
   "arrival" : "Roma",
-  "date" : "15-05-2020",
+  "date" : "25-06-2020",
   "usernamePilot1" : null,
   "usernamePilot2" : null,
   "noPilots" : 0
@@ -66,7 +66,7 @@
   "flightNo" : 9,
   "departure" : "Cluj-Napoca",
   "arrival" : "London",
-  "date" : "03-06-2020",
+  "date" : "30-06-2020",
   "usernamePilot1" : null,
   "usernamePilot2" : null,
   "noPilots" : 0
@@ -74,7 +74,7 @@
   "flightNo" : 10,
   "departure" : "Bucuresti",
   "arrival" : "Copenhaga",
-  "date" : "21-05-2020",
+  "date" : "25-06-2020",
   "usernamePilot1" : null,
   "usernamePilot2" : null,
   "noPilots" : 0

@@ -58,7 +58,7 @@ public class Check_inView extends JFrame {
                 public void valueChanged(ListSelectionEvent e) {
                     if (!e.getValueIsAdjusting()) {
                         selectedValuesList = a.getSelectedValuesList();
-                        System.out.println(selectedValuesList);
+
                     }
                 }
             });

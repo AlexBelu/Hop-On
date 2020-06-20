@@ -35,7 +35,7 @@ public class UserService {
             pilots = objectMapper1.readValue(PILOTS_PATH.toFile(), new TypeReference<ArrayList<Pilot>>() {
             });
         }catch (FileNotFoundException a) {
-            System.out.println("Nu exista fisierul pt pilot");
+           
         }
 
 
@@ -48,7 +48,7 @@ public class UserService {
         customers = objectMapper1.readValue( CUSTOMERS_PATH.toFile(), new TypeReference<ArrayList<Customer>>() {
         });
      }catch (FileNotFoundException a) {
-         System.out.println("Nu exista fisierul pt customer");
+
      }
 
     }
@@ -61,7 +61,7 @@ public class UserService {
         flights = objectMapper3.readValue(FLIGHT_PATH.toFile(), new TypeReference<ArrayList<Flight>>() {
         });
       }catch (FileNotFoundException a) {
-          System.out.println("Nu exista fisierul pt zbor");
+
 
       }
 
