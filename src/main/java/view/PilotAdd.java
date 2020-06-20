@@ -20,6 +20,8 @@ import javax.swing.text.AttributeSet;
 import static org.apache.commons.lang3.StringUtils.isNumeric;
 
 public class PilotAdd extends JFrame {
+    private JButton back;
+    private JButton view;
     public static void main(String[] args) throws IOException {
         PilotAdd frameTabel = new PilotAdd();
         frameTabel.setVisible(true);
@@ -73,6 +75,28 @@ public class PilotAdd extends JFrame {
                     }
 
                 }});
+            back=new JButton("Go Back");
+            back.addActionListener(new ActionListener() {
+                public void actionPerformed(ActionEvent actionEvent) {
+                    PilotView regFace = null;
+                    regFace = new PilotView();
+                    regFace.setVisible(true);
+                    dispose();
+                }
+            });
+            back.setBounds(50, 100, 200, 80);
+            panel.add(back);
+            view= new JButton("View Flights");
+            view.addActionListener(new ActionListener() {
+                public void actionPerformed(ActionEvent actionEvent) {
+                    PilotViewFlights regFace = null;
+                    regFace = new PilotViewFlights();
+                    regFace.setVisible(true);
+                    dispose();
+                }
+            });
+            view.setBounds(50, 100, 200, 80);
+            panel.add(view);
             panel.add(select);
             panel.add(a);
             add(new JScrollPane(panel),BorderLayout.CENTER);

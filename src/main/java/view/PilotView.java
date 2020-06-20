@@ -8,6 +8,7 @@ import java.io.IOException;
 public class PilotView extends JFrame {
    private JButton add;
    private JButton show;
+   private JButton back;
 
 
 
@@ -48,6 +49,17 @@ public class PilotView extends JFrame {
         });
         show.setBounds(175, 160, 120, 40);
         contentPane.add(show);
+        back=new JButton("Go Back");
+        back.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent actionEvent) {
+                LoginView regFace = null;
+                regFace = new LoginView();
+                regFace.setVisible(true);
+                dispose();
+            }
+        });
+        back.setBounds(175, 210, 120, 40);
+        contentPane.add(back);
 
 
     }

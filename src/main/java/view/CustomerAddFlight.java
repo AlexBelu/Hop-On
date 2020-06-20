@@ -15,7 +15,8 @@ import java.util.List;
 import static org.apache.commons.lang3.StringUtils.isNumeric;
 
 public class CustomerAddFlight extends JFrame {
-
+    private JButton back;
+    private JButton view;
     public static void main(String[] args) throws IOException {
         CustomerAddFlight frameTabel = new CustomerAddFlight();
         frameTabel.setVisible(true);
@@ -71,6 +72,28 @@ public class CustomerAddFlight extends JFrame {
                     }
 
                 }});
+            back= new JButton("Go Back");
+            back.addActionListener(new ActionListener() {
+                public void actionPerformed(ActionEvent actionEvent) {
+                    CustomerAdd regFace = null;
+                    regFace = new CustomerAdd();
+                    regFace.setVisible(true);
+                    dispose();
+                }
+            });
+            back.setBounds(50, 100, 200, 80);
+            panel.add(back);
+            view= new JButton("View Flights");
+            view.addActionListener(new ActionListener() {
+                public void actionPerformed(ActionEvent actionEvent) {
+                    CustomerViewFlights regFace = null;
+                    regFace = new CustomerViewFlights();
+                    regFace.setVisible(true);
+                    dispose();
+                }
+            });
+            view.setBounds(50, 100, 200, 80);
+            panel.add(view);
             panel.add(select);
             panel.add(a);
             add(new JScrollPane(panel), BorderLayout.CENTER);
