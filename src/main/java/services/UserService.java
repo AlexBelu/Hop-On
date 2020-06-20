@@ -121,14 +121,14 @@ public class UserService {
         return LoginRole;
     }//
 
-    public static Pilot findPilot(String username) {
+    public static Pilot findPilot(String username) {    //
         for (Pilot pilot : pilots)
             if (pilot.getUsername().equals(username))
                 return pilot;
         return null;
     }
 
-    public static Customer findCustomer(String username) {
+    public static Customer findCustomer(String username) {  //
         for (Customer customer : customers)
             if (customer.getUsername().equals(username))
                 return customer;
@@ -181,7 +181,7 @@ public class UserService {
         return checkInavailable;
     }
 
-    public static Flight getFlight(int a )
+    public static Flight getFlight(int a ) //
     {  Flight b = null;
         for(Flight flight:flights) {
             if (a == flight.getFlightNo()) {
@@ -191,7 +191,7 @@ public class UserService {
         return b;
     }
 
-    public static String[] listToArray(ArrayList list) {
+    public static String[] listToArray(ArrayList list) {    //
         if (list.size() == 0) {
             return null;
         } else {

@@ -26,41 +26,41 @@ public class Flight implements Serializable {
 
     public Flight(){}
 
-    public int getFlightNo() {
+    public int getFlightNo() {  //
         return flightNo;
     }
 
-    public void setFlightNo(int flightNo) {
+    public void setFlightNo(int flightNo) { //
         this.flightNo = flightNo;
     }
 
-    public String getDeparture() {
+    public String getDeparture() {  //
         return departure;
-    }
+    }   //
 
-    public void setDeparture(String departure) {
+    public void setDeparture(String departure) {    //
         this.departure = departure;
-    }
+    }   //
 
-    public String getArrival() {
+    public String getArrival() {    //
         return arrival;
-    }
+    }   //
 
-    public void setArrival(String arrival) {
+    public void setArrival(String arrival) {    //
         this.arrival = arrival;
-    }
+    }   //
 
-    public String getDate() {
+    public String getDate() {   //
         return date;
-    }
+    }   //
 
-    public void setDate(String date) {
+    public void setDate(String date) {  //
         this.date = date;
-    }
+    }   //
 
-    public String getUsernamePilot1() {
+    public String getUsernamePilot1() { //
         return usernamePilot1;
-    }
+    }   //
 
     @Override
     public boolean equals(Object o) {
@@ -81,23 +81,23 @@ public class Flight implements Serializable {
         return Objects.hash(getFlightNo(), getDeparture(), getArrival(), getDate(), getUsernamePilot1(), getUsernamePilot2(), getNoPilots());
     }
 
-    public void setUsernamePilot1(String usernamePilot1) {
+    public void setUsernamePilot1(String usernamePilot1) {  //
         this.usernamePilot1 = usernamePilot1;
         this.noPilots++;
     }
 
     public String getUsernamePilot2() {
         return usernamePilot2;
-    }
+    }   //
 
-    public void setUsernamePilot2(String usernamePilot2) {
+    public void setUsernamePilot2(String usernamePilot2) {  //
         this.usernamePilot2 = usernamePilot2;
         this.noPilots++;
     }
 
     public int getNoPilots() {
         return noPilots;
-    }
+    }   //
 
     public String toString() {
         return
