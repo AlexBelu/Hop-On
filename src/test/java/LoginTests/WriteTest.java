@@ -57,7 +57,6 @@ public class WriteTest {
        flight1.setUsernamePilot2("Vladovici Ana");
        custom.get(0).getMyFlights().add(flight1);
        custom.get(1).getMyFlights().add(flight1);
-       System.out.println(custom);
        assertEquals(custom, UserService.getPilots());
        String[] fli = new String[1];
        fli[0] = flight1.toString();
