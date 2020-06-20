@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>PilotViewFlights.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Hop-On</a> &gt; <a href="index.source.html" class="el_package">view</a> &gt; <span class="el_source">PilotViewFlights.java</span></div><h1>PilotViewFlights.java</h1><pre class="source lang-java linenums">package view;
+
+import services.UserService;
+import javax.swing.JScrollPane;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.IOException;
+
+public class PilotViewFlights  extends JFrame {
+     private JButton back ;
+
+
+    PilotViewFlights() {
+<span class="nc" id="L16">        super(&quot;Show flights&quot;);</span>
+<span class="nc" id="L17">        setSize(500, 500);</span>
+<span class="nc" id="L18">        setLocation(500, 280);</span>
+<span class="nc" id="L19">        JLabel welcome = new JLabel(&quot;Welcome to the 'Show flights' page&quot;);</span>
+<span class="nc" id="L20">        JPanel panel = new JPanel();</span>
+<span class="nc" id="L21">        welcome.setBounds(167, 10, 250, 100);</span>
+<span class="nc" id="L22">        panel.add(welcome);</span>
+<span class="nc" id="L23">        getContentPane().add(panel);</span>
+<span class="nc" id="L24">        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);</span>
+<span class="nc" id="L25">        String[] b = UserService.findPilot(LoginView.getTxtUsername()).showFlights();</span>
+<span class="nc" id="L26">        back= new JButton(&quot;Go Back&quot;);</span>
+<span class="nc" id="L27">        back.addActionListener(new ActionListener() {</span>
+            public void actionPerformed(ActionEvent actionEvent) {
+<span class="nc" id="L29">                PilotView regFace = null;</span>
+<span class="nc" id="L30">                regFace = new PilotView();</span>
+<span class="nc" id="L31">                regFace.setVisible(true);</span>
+<span class="nc" id="L32">                dispose();</span>
+<span class="nc" id="L33">            }</span>
+        });
+<span class="nc" id="L35">        back.setBounds(50, 100, 200, 80);</span>
+<span class="nc" id="L36">        panel.add(back);</span>
+
+<span class="nc bnc" id="L38" title="All 2 branches missed.">        if (b != null) {</span>
+<span class="nc" id="L39">            JList a = new JList(b);</span>
+<span class="nc" id="L40">            a.setBounds(100, 100, 200, 60);</span>
+<span class="nc" id="L41">            panel.add(a);</span>
+<span class="nc" id="L42">            add(new JScrollPane(panel),BorderLayout.CENTER);</span>
+<span class="nc" id="L43">        } else {</span>
+<span class="nc" id="L44">            JLabel er = new JLabel(&quot;You do not have any flights&quot;);</span>
+<span class="nc" id="L45">            er.setBounds(180, 200, 250, 100);</span>
+<span class="nc" id="L46">            panel.add(er);</span>
+        }
+<span class="nc" id="L48">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>
